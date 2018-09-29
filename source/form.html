@@ -22,7 +22,74 @@
   </header>
 
   <main>
-
+    <section>
+      <img src="http://placehold.it/200x200" alt="Пейзаж Седоны">
+      <p><b>Оставьте свой отзыв</b></p>
+      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+    </section>
+    <section>
+      <form action="http://echo.htmlacademy.ru" method="POST">
+        <div>
+          <p><b>Представьтесь:</b></p>
+          <label for="#">Имя<sup>*</sup>:</label>
+          <input type="text" name="first-name" placeholder="Петр">
+          <label for="#">Фамилия<sup>*</sup>:</label>
+          <input type="text" name="second-name" placeholder="Иванов">
+          <label for="#">Отчество:</label>
+          <input type="text" name="third-name" placeholder="Александрович">
+        </div>
+        <div>
+          <p><b>Контактная информация:</b></p>
+          <label for="#">Контактный телефон<sup>*</sup>:</label>
+          <input type="text" name="number" placeholder="Введите телефон">
+          <label for="#">Электронная почта<sup>*</sup>:</label>
+          <input type="email" name="email" placeholder="Введите e&#8211;mail">
+        </div>
+        <div>
+          <p><b>Ваше общее впечатление:</b></p>
+          <ul>
+            <li>
+              <input type="radio" name="feedback-radio" value="great-opinion">
+              <label for="#">Скорее положительное</label>
+            </li>
+            <li>
+              <input type="radio" name="feedback-radio" value="bad-opinion">
+              <label for="#">Скорее отрицательное</label>
+            </li>
+            <li>
+              <input type="radio" name="feedback-radio" value="no-answer">
+              <label for="#">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p><b>Посещенные достопримечательности:</b></p>
+          <ul>
+            <li>
+              <input type="checkbox" name="feedback-places" value="place-1">
+              <label for="#">Мост Дьявола</label>
+            </li>
+            <li>
+              <input type="checkbox" name="feedback-places" value="place-2">
+              <label for="#">Гора&#8211;Колокол</label>
+            </li>
+            <li>
+              <input type="checkbox" name="feedback-places" value="place-3">
+              <label for="#">Слайд&#8211;парк</label>
+            </li>
+            <li>
+              <input type="checkbox" name="feedback-places" value="place-4">
+              <label for="#">Красные скалы</label>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p><b>Опишите свои эмоции:</b></p>
+          <textarea name="feedback-text" id="#" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+        <button type="submit">Отправить отзыв</button>
+      </form>
+    </section>
   </main>
 
   <footer>
@@ -37,8 +104,8 @@
       </li>
       <li>
         <a href="https://htmlacademy.ru/intensive/adaptive">
-        Разработано
-        <img src="http://placehold.it/50x50" alt="htmlacademy">
+          Разработано
+          <img src="http://placehold.it/50x50" alt="htmlacademy">
         </a>
       </li>
     </ul>
