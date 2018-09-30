@@ -7,89 +7,90 @@
 </head>
 
 <body>
-    <header class="page-header">
-        <a href="#" class="page-header__logo">
-          <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип">
-        </a>
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item"><a href="index.html">Главная</a></li>
-            <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-            <li class="site-list__item"><a>Форма отзыва</a></li>
-            <li class="site-list__item"><a href="http://htmlacademy.ru">Html academy</a></li>
-          </ul>
-          <button class="main-nav__open" type="button"></button>
-          <button class="main-nav__close" type="button"></button>
-        </nav>
-      </header>
+  <header class="page-header">
+    <a href="#" class="page-header__logo">
+      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип">
+    </a>
+    <nav class="main-nav">
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a href="index.html">Главная</a></li>
+        <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
+        <li class="site-list__item"><a>Форма отзыва</a></li>
+        <li class="site-list__item"><a href="http://htmlacademy.ru">Html academy</a></li>
+      </ul>
+      <button class="main-nav__open" type="button"></button>
+      <button class="main-nav__close" type="button"></button>
+    </nav>
+  </header>
 
-  <main>
-    <section>
-      <img src="http://placehold.it/200x200" alt="Пейзаж Седоны">
-      <p><b>Оставьте свой отзыв</b></p>
-      <p>Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
-    </section>
-    <section>
-      <form action="http://echo.htmlacademy.ru" method="POST">
-        <div>
-          <p><b>Представьтесь:</b></p>
-          <label for="#">Имя<sup>*</sup>:</label>
-          <input type="text" name="first-name" placeholder="Петр">
-          <label for="#">Фамилия<sup>*</sup>:</label>
-          <input type="text" name="second-name" placeholder="Иванов">
-          <label for="#">Отчество:</label>
-          <input type="text" name="third-name" placeholder="Александрович">
+  <main class="page-form">
+    <section class="page-form__review">
+      <h1 class="visually-hidden">Отзывы о Седоне</h1>
+      <div class="page-form__top">
+        <img class="page-form__picture" src="http://placehold.it/200x200" alt="Пейзаж Седоны">
+        <p class="page-form__title"><b class="page-form__title-bold">Оставьте свой отзыв</b></p>
+        <p class="page-form__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+      </div>
+      <form class="page-form__interview" action="http://echo.htmlacademy.ru" method="POST">
+        <div class="page-form__block name">
+          <p class="name__title"><b class="page-form__bold">Представьтесь:</b></p>
+          <label class="name__label" for="#">Имя<sup>*</sup>:</label>
+          <input class="name__input" type="text" name="first-name" placeholder="Петр">
+          <label class="name__label" for="#">Фамилия<sup>*</sup>:</label>
+          <input class="name__input" type="text" name="second-name" placeholder="Иванов">
+          <label class="name__label" for="#">Отчество:</label>
+          <input class="name__input" type="text" name="third-name" placeholder="Александрович">
         </div>
-        <div>
-          <p><b>Контактная информация:</b></p>
-          <label for="#">Контактный телефон<sup>*</sup>:</label>
-          <input type="text" name="number" placeholder="Введите телефон">
-          <label for="#">Электронная почта<sup>*</sup>:</label>
-          <input type="email" name="email" placeholder="Введите e&#8211;mail">
+        <div class="page-form__block contacts">
+          <p class="contacts__title"><b class="page-form__bold">Контактная информация:</b></p>
+          <label class="contacts__label" for="#">Контактный телефон<sup>*</sup>:</label>
+          <input class="contacts__input" type="text" name="number" placeholder="Введите телефон">
+          <label class="contacts__label" for="#">Электронная почта<sup>*</sup>:</label>
+          <input class="contacts__input" type="email" name="email" placeholder="Введите e&#8211;mail">
         </div>
-        <div>
-          <p><b>Ваше общее впечатление:</b></p>
-          <ul>
-            <li>
-              <input type="radio" name="feedback-radio" value="great-opinion">
-              <label for="#">Скорее положительное</label>
+        <div class="page-form__block impression">
+          <p class="impression__title"><b class="page-form__bold">Ваше общее впечатление:</b></p>
+          <ul class="impression__list">
+            <li class="impression__item">
+              <input class="impression__radio" type="radio" name="feedback-radio" value="great-opinion">
+              <label class="impression__label" for="#">Скорее положительное</label>
             </li>
-            <li>
-              <input type="radio" name="feedback-radio" value="bad-opinion">
-              <label for="#">Скорее отрицательное</label>
+            <li class="impression__item">
+              <input class="impression__radio" type="radio" name="feedback-radio" value="bad-opinion">
+              <label class="impression__label" for="#">Скорее отрицательное</label>
             </li>
-            <li>
-              <input type="radio" name="feedback-radio" value="no-answer">
-              <label for="#">Затрудняюсь ответить</label>
+            <li class="impression__item">
+              <input class="impression__radio" type="radio" name="feedback-radio" value="no-answer">
+              <label class="impression__label" for="#">Затрудняюсь ответить</label>
             </li>
           </ul>
         </div>
-        <div>
-          <p><b>Посещенные достопримечательности:</b></p>
-          <ul>
-            <li>
-              <input type="checkbox" name="feedback-places" value="place-1">
-              <label for="#">Мост Дьявола</label>
+        <div class="page-form__block showplace">
+          <p class="showplace__title"><b class="page-form__bold">Посещенные достопримечательности:</b></p>
+          <ul class="showplace__list">
+            <li class="showplace__item">
+              <input class="showplace__checkbox" type="checkbox" name="feedback-places" value="place-1">
+              <label class="showplace__label" for="#">Мост Дьявола</label>
             </li>
-            <li>
-              <input type="checkbox" name="feedback-places" value="place-2">
-              <label for="#">Гора&#8211;Колокол</label>
+            <li class="showplace__item">
+              <input class="showplace__checkbox" type="checkbox" name="feedback-places" value="place-2">
+              <label class="showplace__label" for="#">Гора&#8211;Колокол</label>
             </li>
-            <li>
-              <input type="checkbox" name="feedback-places" value="place-3">
-              <label for="#">Слайд&#8211;парк</label>
+            <li class="showplace__item">
+              <input class="showplace__checkbox" type="checkbox" name="feedback-places" value="place-3">
+              <label class="showplace__label" for="#">Слайд&#8211;парк</label>
             </li>
-            <li>
-              <input type="checkbox" name="feedback-places" value="place-4">
-              <label for="#">Красные скалы</label>
+            <li class="showplace__item">
+              <input class="showplace__checkbox" type="checkbox" name="feedback-places" value="place-4">
+              <label class="showplace__label" for="#">Красные скалы</label>
             </li>
           </ul>
         </div>
-        <div>
-          <p><b>Опишите свои эмоции:</b></p>
-          <textarea name="feedback-text" id="#" placeholder="Опишите подробно все свои восторги"></textarea>
+        <div class="page-form__block emotion">
+          <p class="emotion__title"><b class="page-form__bold">Опишите свои эмоции:</b></p>
+          <textarea class="emotion__textarea" name="feedback-text" id="#" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <button type="submit">Отправить отзыв</button>
+        <button class="page-form__submit" type="submit">Отправить отзыв</button>
       </form>
     </section>
   </main>
