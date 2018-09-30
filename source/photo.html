@@ -23,49 +23,52 @@
     </nav>
   </header>
 
-  <main>
-    <section>
-      <img src="http://placehold.it/150x100" alt="Пейзаж Седоны">
-      <p><b>Фото и видео</b></p>
-      <p>Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
-    </section>
-    <section>
-      <ul>
-        <li>
-          <img src="http://placehold.it/280x280" alt="Фото">
-          <p><b>Народные просторы</b></p>
-          <p>Автор фото: Борис</p>
-          <p>1350</p>
+  <main class="page-photo">
+    <h1 class="visually-hidden">Галерея снимков Седоны</h1>
+    <section class="page-photo__gallery">
+      <h2 class="visually-hidden">Список снимков</h2>
+      <div class="page-photo__top">
+        <img class="page-photo__picture" src="http://placehold.it/150x100" alt="Пейзаж Седоны">
+        <p class="page-photo__title"><b class="page-photo__bold">Фото и видео</b></p>
+        <p class="page-photo__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике и экономике.</p>
+      </div>
+      <ul class="page-photo__list">
+        <li class="page-photo__item block-item">
+          <img class="block-item__picture" src="http://placehold.it/280x280" alt="Фото">
+          <p class="block-item__name"><b class="block-item__bold">Народные просторы</b></p>
+          <p class="block-item__author">Автор фото: Борис</p>
+          <p class="block-item__likes">1350</p>
         </li>
-        <li>
-          <img src="http://placehold.it/280x280" alt="Фото">
-          <p><b>Местная растительность</b></p>
-          <p>Автор фото: Сергей</p>
-          <p>143</p>
+        <li class="page-photo__item block-item">
+          <img class="block-item__picture" src="http://placehold.it/280x280" alt="Фото">
+          <p class="block-item__name"><b class="block-item__bold">Местная растительность</b></p>
+          <p class="block-item__author">Автор фото: Сергей</p>
+          <p class="block-item__likes">143</p>
         </li>
-        <li>
-          <img src="http://placehold.it/280x280" alt="Фото">
-          <p><b>Дорога на север</b></p>
-          <p>Автор фото: Петр</p>
-          <p>96</p>
+        <li class="page-photo__item block-item">
+          <img class="block-item__picture" src="http://placehold.it/280x280" alt="Фото">
+          <p class="block-item__name"><b class="block-item__bold">Дорога на север</b></p>
+          <p class="block-item__author">Автор фото: Петр</p>
+          <p class="block-item__likes">96</p>
         </li>
-        <li>
-          <img src="http://placehold.it/280x280" alt="Фото">
-          <p><b>Мост дьявола</b></p>
-          <p>Автор фото: Антон</p>
-          <p>254</p>
+        <li class="page-photo__item block-item">
+          <img class="block-item__picture" src="http://placehold.it/280x280" alt="Фото">
+          <p class="block-item__name"><b class="block-item__bold">Мост дьявола</b></p>
+          <p class="block-item__author">Автор фото: Антон</p>
+          <p class="block-item__likes">254</p>
         </li>
       </ul>
     </section>
-    <section>
-      <p><b>Все ещё сомневаетесь?</b></p>
-      <p>Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
-      <div>
-        <video controls src="video.mp4"></video>
-        <div>
-          <button></button>
-          <button></button>
-          <button></button>
+    <section class="page-photo__video player">
+      <h2 class="visually-hidden">Видео ролик о Седоне</h2>
+      <p class="player__title"><b class="palyer__bold">Все ещё сомневаетесь?</b></p>
+      <p class="player__text">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в очередной раз!</p>
+      <div class="player__block">
+        <video class="player__window" controls src="video.mp4"></video>
+        <div class="player__buttons">
+          <button class="player__button-reply"></button>
+          <button class="player__button-CC"></button>
+          <button class="player__button-fullscreen"></button>
         </div>
       </div>
     </section>
