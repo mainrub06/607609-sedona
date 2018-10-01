@@ -8,23 +8,22 @@
 
 <body>
   <header class="page-header">
-    <a href="#" class="page-header__logo">
-      <img class="page-header__logo-image" src="http://placehold.it/150x100" alt="Логотип">
-    </a>
     <nav class="main-nav">
+      <a href="#" class="main-nav__logo">
+        <img class="main-nav__logo-image" src="http://placehold.it/150x100" alt="Логотип">
+      </a>
       <ul class="main-nav__list site-list">
-        <li class="site-list__item"><a>Главная</a></li>
-        <li class="site-list__item"><a href="photo.html">Фото и видео</a></li>
-        <li class="site-list__item"><a href="form.html">Форма отзыва</a></li>
-        <li class="site-list__item"><a href="http://htmlacademy.ru">Html academy</a></li>
+        <li class="site-list__item"><a class="site-list__link">Главная</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="http://htmlacademy.ru">Html academy</a></li>
       </ul>
-      <button class="main-nav__open" type="button"></button>
-      <button class="main-nav__close" type="button"></button>
+      <button class="main-nav__toggle" type="button"></button>
     </nav>
   </header>
 
   <main class="page-main">
-    <h1 class="visually-hidden">Седона&#8212;городок в Аризоне, заслуживающий большего!</h1>
+    <p class="visually-hidden">Седона&#8212;городок в Аризоне, заслуживающий большего!</p>
     <section class="introduction">
       <h2 class="visually-hidden">Вступление</h2>
       <img class="introduction__image" src="http://placehold.it/150x100" alt="Пейзаж-горы">
@@ -39,17 +38,17 @@
         <li class="advantages__item advantage-description">
           <ul class="advantage-description__list">
             <li class="advantage-description__item">
-              <div class="adavantage-description__wrap">
-                <div class="advantage-description__block-right">
-                  <p class="advantage-description__title"><b class="advantage-description__title-bold">Настоящий
-                      городок</b></p>
-                  <p class="advantage-description__number">№1</p>
-                  <p class="advantage-description__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
-                </div>
-                <div class="advantage-description__photo">
-                  <img class="advantage-description__photo-image" src="http://placehold.it/150x100" alt="Фото Седоны: мотель">
-                </div>
+
+              <div class="advantage-description__block-right">
+                <p class="advantage-description__title"><b class="advantage-description__title-bold">Настоящий
+                    городок</b></p>
+                <p class="advantage-description__number">№1</p>
+                <p class="advantage-description__text">Седона не аттракцион для туристов, там течёт своя жизнь</p>
               </div>
+              <div class="advantage-description__photo">
+                <img class="advantage-description__photo-image" src="http://placehold.it/150x100" alt="Фото Седоны: мотель">
+              </div>
+
 
               <ul class="advantage-description__services-list">
                 <li class="advantage-description__services-item">
@@ -111,22 +110,19 @@
   </main>
 
   <footer class="footer-page">
-    <ul class="footer-page__list">
-      <li class="footer-page__instagram">
-        <a class="footer-page__hashtag" href="http://instagram.com/#visitsedona">#VISITSEDONA</a>
-      </li>
-      <li class="footer-page__social">
-        <a class="footer-page__twitter" href="#"></a>
-        <a class="footer-page__facebook" href="#"></a>
-        <a class="footer-page__youtube" href="#"></a>
-      </li>
-      <li class="footer-page__developer">
-        <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive">
-          Разработано
-          <img class="footer-page__link-image" src="http://placehold.it/50x50" alt="htmlacademy">
-        </a>
-      </li>
+    <div class="footer-page__instagram">
+      <a class="footer-page__hashtag" href="http://instagram.com/#visitsedona">#VISITSEDONA</a>
+    </div>
+    <ul class="footer-page__social">
+      <li><a class="footer-page__twitter" href="#"></a></li>
+      <li><a class="footer-page__facebook" href="#"></a></li>
+      <li><a class="footer-page__youtube" href="#"></a></li>
     </ul>
+    <div class="footer-page__developer">
+      <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer-page__link-image" src="http://placehold.it/50x50" alt="htmlacademy">
+      </a>
+    </div>
   </footer>
 
 </body>
