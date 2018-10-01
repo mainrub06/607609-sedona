@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>HTML Academy: Седона</title>
+</head>
+
+<body>
+  <header class="page-header">
+    <nav class="main-nav">
+      <a href="#" class="main-nav__logo">
+        <img class="main-nav__logo-image" src="http://placehold.it/150x100" alt="Логотип">
+      </a>
+      <ul class="main-nav__list site-list">
+        <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
+        <li class="site-list__item"><a class="site-list__link">Форма отзыва</a></li>
+        <li class="site-list__item"><a class="site-list__link" href="http://htmlacademy.ru">Html academy</a></li>
+      </ul>
+      <button class="main-nav__toggle" type="button"></button>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <h1 class="visually-hidden">Отзывы о Седоне</h1>
+    <section class="page-main__review review">
+      <h2 class="visually-hidden">Форма отзыва</h2>
+      <div class="review__top">
+        <p class="review__title"><b class="review__title-bold">Оставьте свой отзыв</b></p>
+        <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+          достопримечательностях</p>
+      </div>
+      <form class="review__interview interview" action="http://echo.htmlacademy.ru" method="POST">
+        <div class="review__block interview__name">
+          <p class="interview__title"><b class="interview__bold">Представьтесь:</b></p>
+          <label class="interview__name-label" for="name-1">Имя<sup>*</sup>:</label>
+          <input class="interview__name-input" type="text" id="name-1" name="first-name" placeholder="Петр">
+          <label class="interview__name-label" for="name-2">Фамилия<sup>*</sup>:</label>
+          <input class="interview__name-input" type="text" id="name-2" name="second-name" placeholder="Иванов">
+          <label class="interview__name-label" for="name-3">Отчество:</label>
+          <input class="interview__name-input" type="text" id="name-3" name="third-name" placeholder="Александрович">
+        </div>
+        <div class="review__block interview__contacts">
+          <p class="interview__title"><b class="interview__bold">Контактная информация:</b></p>
+          <label class="interview__contacts-label" for="phone">Контактный телефон<sup>*</sup>:</label>
+          <input class="interview__contacts-input" type="text" id="phone" name="number" placeholder="Введите телефон">
+          <label class="interview__contacts-label" for="email">Электронная почта<sup>*</sup>:</label>
+          <input class="interview__contacts-input" type="email" id="email" name="email" placeholder="Введите e&#8211;mail">
+        </div>
+        <div class="review__block interview__impression">
+          <p class="interview__title"><b class="interview__bold">Ваше общее впечатление:</b></p>
+          <ul class="interview__impression-list">
+            <li class="interview__impression-item">
+              <input class="interview__impression-radio" type="radio" name="feedback-radio" value="great-opinion">
+              <label class="interview__impression-label" for="#">Скорее положительное</label>
+            </li>
+            <li class="interview__impression-item">
+              <input class="interview__impression-radio" type="radio" name="feedback-radio" value="bad-opinion">
+              <label class="interview__impression-label" for="#">Скорее отрицательное</label>
+            </li>
+            <li class="interview__impression-item">
+              <input class="interview__impression-radio" type="radio" name="feedback-radio" value="no-answer">
+              <label class="interview__impression-label" for="#">Затрудняюсь ответить</label>
+            </li>
+          </ul>
+        </div>
+        <div class="review__block interview__showplace">
+          <p class="interview__title"><b class="interview__bold">Посещенные достопримечательности:</b></p>
+          <ul class="interview__showplace-list">
+            <li class="interview__showplace-item">
+              <input class="interview__showplace-checkbox" type="checkbox" id="bridge-devil" name="feedback-places"
+                value="place-1">
+              <label class="interview__showplace-label" for="bridge-devil">Мост Дьявола</label>
+            </li>
+            <li class="interview__showplace-item">
+              <input class="interview__showplace-checkbox" type="checkbox" id="mount" name="feedback-places" value="place-2">
+              <label class="interview__showplace-label" for="mount">Гора&#8211;Колокол</label>
+            </li>
+            <li class="interview__showplace-item">
+              <input class="interview__showplace-checkbox" type="checkbox" id="park" name="feedback-places" value="place-3">
+              <label class="interview__showplace-label" for="park">Слайд&#8211;парк</label>
+            </li>
+            <li class="interview__showplace-item">
+              <input class="interview__showplace-checkbox" type="checkbox" id="red-mount" name="feedback-places" value="place-4">
+              <label class="interview__showplace-label" for="red-mount">Красные скалы</label>
+            </li>
+          </ul>
+        </div>
+        <div class="review__block interview__emotion">
+          <p class="interview__title"><b class="interview__bold">Опишите свои эмоции:</b></p>
+          <textarea class="interview__emotion-textarea" name="feedback-text" id="#" placeholder="Опишите подробно все свои восторги"></textarea>
+        </div>
+        <button class="review__submit interview__submit" type="submit">Отправить отзыв</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer-page">
+    <div class="footer-page__instagram">
+      <a class="footer-page__hashtag" href="http://instagram.com/#visitsedona">#VISITSEDONA</a>
+    </div>
+    <ul class="footer-page__social">
+      <li><a class="footer-page__twitter" href="#"></a></li>
+      <li><a class="footer-page__facebook" href="#"></a></li>
+      <li><a class="footer-page__youtube" href="#"></a></li>
+    </ul>
+    <div class="footer-page__developer">
+      <p class="footer-page__developer-text">Разработано</p>
+      <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <img class="footer-page__link-image" src="http://placehold.it/50x50" alt="htmlacademy">
+      </a>
+    </div>
+  </footer>
+
+</body>
+
+</html>
