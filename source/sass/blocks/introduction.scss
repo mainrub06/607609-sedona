@@ -1,16 +1,51 @@
-.introduction--image {
-  padding-top: 389px;
-  background: url("/img/text-sedona-index.svg") no-repeat center center,
-  url("/img/bg-back-mobile@1x.jpg") no-repeat;
+.introduction {
+  width: 280px;
+  padding: 0 20px;
+  padding-top: 90px;
+}
+
+.introduction__image {
+  display: flex;
+  margin: 0 auto;
 
 }
 
+.introduction--image {
+  position: relative;
+  background: url("/img/bg-back-mobile@1x.jpg") no-repeat top center;
+
+}
+
+.introduction--image::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 26px;
+  top: 362px;
+  left: 0px;
+  background: url("/img/bg-intro-triangle-mobile.svg") no-repeat;
+}
+
+.introduction__title {
+  margin: 0;
+  padding: 0 10px;
+  margin-top: 127px;
+  text-align: center;
+  line-height: 26px;
+}
 .introduction__title-bold {
   @include boldfont;
   text-transform: uppercase;
+
 }
 
 .introduction__description {
+  margin: 0;
+  margin-top: 32px;
   @include normalfont;
+  line-height: 26px;
+  text-align: center;
   text-transform: uppercase;
+  color: #333333;
+
 }
