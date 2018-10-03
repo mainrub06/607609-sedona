@@ -1,0 +1,16 @@
+.introduction--image {
+  padding-top: 389px;
+  background: url("/img/text-sedona-index.svg") no-repeat center center,
+  url("/img/bg-back-mobile@1x.jpg") no-repeat;
+
+}
+
+.introduction__title-bold {
+  @include boldfont;
+  text-transform: uppercase;
+}
+
+.introduction__description {
+  @include normalfont;
+  text-transform: uppercase;
+}
