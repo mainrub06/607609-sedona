@@ -1,3 +1,45 @@
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  position: relative;
   width: 320px;
+  min-height: 279px;
+}
+
+.main-nav__list {
+  order: 0;
+}
+
+.main-nav__logo {
+  position: absolute;
+  order: 1;
+  top: 224px;
+  right: 50%;
+  transform: translateX(50%);
+  z-index: 1;
+}
+
+.main-nav__toggle {
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  right: 20px;
+  top: 17px;
+  border: none;
+  background-color: none;
+  background: url("/img/icon-cross.svg") no-repeat center center;
+  cursor: pointer;
+}
+
+.main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 22px;
+  left: 0px;
+  top: 225px;
+  border: none;
+  background-color: none;
+  background: url("/img/icon-menu.svg") no-repeat center center;
+  cursor: pointer;
 }
