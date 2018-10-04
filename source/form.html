@@ -4,14 +4,14 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css" >
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
   <header class="page-header">
     <nav class="main-nav">
       <a href="#" class="main-nav__logo">
-        <img class="main-nav__logo-image" src="../img/logo-sedona-mobile.svg" alt="Логотип"  width="102" height="83">
+        <img class="main-nav__logo-image" src="../img/logo-sedona-mobile.svg" alt="Логотип" width="102" height="83">
       </a>
       <ul class="main-nav__list site-list">
         <li class="site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
@@ -33,7 +33,7 @@
           достопримечательностях</p>
       </div>
       <form class="review__interview interview" action="http://echo.htmlacademy.ru" method="POST">
-        <div class="review__block interview__name">
+        <div class="review__block interview__name review__block--style">
           <p class="interview__title"><b class="interview__bold">Представьтесь:</b></p>
           <label class="interview__name-label" for="name-1">Имя<sup>*</sup>:</label>
           <input class="interview__name-input" type="text" id="name-1" name="first-name" placeholder="Петр">
@@ -42,31 +42,31 @@
           <label class="interview__name-label" for="name-3">Отчество:</label>
           <input class="interview__name-input" type="text" id="name-3" name="third-name" placeholder="Александрович">
         </div>
-        <div class="review__block interview__contacts">
+        <div class="review__block interview__contacts review__block--style">
           <p class="interview__title"><b class="interview__bold">Контактная информация:</b></p>
           <label class="interview__contacts-label" for="phone">Контактный телефон<sup>*</sup>:</label>
           <input class="interview__contacts-input" type="text" id="phone" name="number" placeholder="Введите телефон">
           <label class="interview__contacts-label" for="email">Электронная почта<sup>*</sup>:</label>
           <input class="interview__contacts-input" type="email" id="email" name="email" placeholder="Введите e&#8211;mail">
         </div>
-        <div class="review__block interview__impression">
+        <div class="review__block interview__impression review__block--style">
           <p class="interview__title"><b class="interview__bold">Ваше общее впечатление:</b></p>
           <ul class="interview__impression-list">
             <li class="interview__impression-item">
-              <input class="interview__impression-radio" type="radio" name="feedback-radio" value="great-opinion">
-              <label class="interview__impression-label" for="#">Скорее положительное</label>
+              <input class="interview__impression-radio" type="radio" id="radio-1" name="feedback-radio" value="great-opinion">
+              <label class="interview__impression-label" for="radio-1">Скорее положительное</label>
             </li>
             <li class="interview__impression-item">
-              <input class="interview__impression-radio" type="radio" name="feedback-radio" value="bad-opinion">
-              <label class="interview__impression-label" for="#">Скорее отрицательное</label>
+              <input class="interview__impression-radio" type="radio" id="radio-2" name="feedback-radio" value="bad-opinion">
+              <label class="interview__impression-label" for="radio-2">Скорее отрицательное</label>
             </li>
             <li class="interview__impression-item">
-              <input class="interview__impression-radio" type="radio" name="feedback-radio" value="no-answer">
-              <label class="interview__impression-label" for="#">Затрудняюсь ответить</label>
+              <input class="interview__impression-radio" type="radio" id="radio-3" name="feedback-radio" value="no-answer">
+              <label class="interview__impression-label" for="radio-3">Затрудняюсь ответить</label>
             </li>
           </ul>
         </div>
-        <div class="review__block interview__showplace">
+        <div class="review__block interview__showplace review__block--style">
           <p class="interview__title"><b class="interview__bold">Посещенные достопримечательности:</b></p>
           <ul class="interview__showplace-list">
             <li class="interview__showplace-item">
@@ -88,7 +88,7 @@
             </li>
           </ul>
         </div>
-        <div class="review__block interview__emotion">
+        <div class="review__block interview__emotion review__block--style">
           <p class="interview__title"><b class="interview__bold">Опишите свои эмоции:</b></p>
           <textarea class="interview__emotion-textarea" name="feedback-text" id="#" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
