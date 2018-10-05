@@ -11,19 +11,9 @@
 }
 
 .introduction--image {
-  position: relative;
-  background: url("/img/bg-back-mobile@1x.jpg") no-repeat top center;
-
-}
-
-.introduction--image::before {
-  content: "";
-  position: absolute;
-  width: 320px;
-  height: 26px;
-  top: 363px;
-  left: 2px;
-  background: url("/img/bg-intro-triangle-mobile.svg") no-repeat;
+  background:
+  url("/img/bg-intro-triangle-mobile.svg") repeat-x 0 363px,
+  url("/img/bg-back-mobile@1x.jpg") no-repeat top center;
 }
 
 .introduction__title {
