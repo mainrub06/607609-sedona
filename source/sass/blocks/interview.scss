@@ -44,7 +44,7 @@
   height: 58px;
   border: none;
   background-color: #f2f2f2;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Verdana", sans-serif;
 }
 
 .interview__name-input::placeholder {
@@ -67,7 +67,7 @@
   width: 100%;
   padding: 0 22px 0 22px;
   margin-top: 9px;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Verdana", sans-serif;
   @include normalfont;
   height: 58px;
   border: none;
@@ -128,12 +128,12 @@
 }
 
 .interview__emotion-textarea {
-  width: 280px;
+  width: 248px;
   height: 160px;
   padding: 22px 10px 0 22px;
   border: none;
   background-color: #f2f2f2;
-  font-family: "PT Sans";
+  font-family: "PT Sans","Verdana", sans-serif;
   @include normalfont;
 }
 
