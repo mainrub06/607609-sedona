@@ -1,0 +1,60 @@
+.footer-page {
+  font-family: "PT Sans", "Verdana", sans-serif;
+  width: 320px;
+  margin: 0 auto;
+}
+
+.footer-page__instagram {
+  width: 280px;
+  padding: 0 20px;
+  margin: 39px 0 40px 0;
+}
+
+.footer-page__hashtag {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-decoration: none;
+  color: black;
+  text-align: center;
+
+  margin-left: 70px;
+}
+
+.footer-page__social {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  width: 151px;
+  height: 48px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.footer-page__twitter,
+.footer-page__facebook,
+.footer-page__youtube {
+  display: block;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.footer-page__developer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 140px;
+  margin: 0 auto;
+  margin-top: 40px;
+  margin-bottom: 23px;
+}
+
+.footer-page__developer-text {
+  margin: 0;
+
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+}

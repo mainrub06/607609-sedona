@@ -1,0 +1,39 @@
+.introduction {
+  width: 280px;
+  padding: 0 20px;
+  padding-top: 90px;
+}
+
+.introduction__image {
+  display: flex;
+  margin: 0 auto;
+}
+
+.introduction--image {
+  background:
+    url("/img/bg-intro-triangle-mobile.svg") repeat-x 0 363px,
+    url("/img/bg-back-mobile@1x.jpg") no-repeat top center;
+}
+
+.introduction__title {
+  margin: 0;
+  padding: 0 10px;
+  margin-top: 127px;
+  text-align: center;
+  line-height: 26px;
+}
+
+.introduction__title-bold {
+  @include boldfont;
+  text-transform: uppercase;
+}
+
+.introduction__description {
+  @include normalfont;
+  margin: 0;
+  margin-top: 32px;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #333333;
+}

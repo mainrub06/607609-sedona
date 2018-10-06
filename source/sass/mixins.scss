@@ -1,0 +1,9 @@
+@mixin boldfont {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+@mixin normalfont {
+  font-weight: 400;
+  font-size: 14px;
+}

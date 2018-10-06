@@ -1,0 +1,66 @@
+.player {
+  width: 320px;
+}
+
+.player__title {
+  margin: 35px 0 34px 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.player__text {
+  margin: 0 0 37px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.player__window {
+  width: 320px;
+  height: 201px;
+}
+
+.player__buttons {
+  display: flex;
+  align-items: center;
+  width: 280px;
+  height: 66px;
+  margin-left: 20px;
+  background-color: #f2f2f2;
+}
+
+.player__button-reply,
+.player__button-CC,
+.player__button-fullscreen {
+  border: none;
+  background-color: none;
+}
+
+.player__button-reply {
+  margin-left: 25px;
+  width: 16px;
+  height: 20px;
+  background: url("/img/icon-video-replay.svg") no-repeat center center;
+  cursor: pointer;
+}
+
+.player__button-CC {
+  margin-left: 133px;
+  width: 32px;
+  height: 20px;
+  background: url("/img/icon-video-subtitles.svg") no-repeat center center;
+  cursor: pointer;
+}
+
+.player__button-fullscreen {
+  margin-left: 31px;
+  width: 20px;
+  height: 20px;
+  background: url("/img/icon-video-fullscreen.svg") no-repeat center center;
+  cursor: pointer;
+}

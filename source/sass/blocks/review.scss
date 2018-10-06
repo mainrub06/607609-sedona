@@ -1,0 +1,45 @@
+.review {
+  width: 320px;
+  background: url("/img/text-sedona.svg") no-repeat 50% 52px, url("/img/bg-intro-triangle-mobile.svg") no-repeat 0 132px, url("/img/bg-back-mobile@1x.jpg") no-repeat center -231px;
+}
+
+.review__top {
+  padding-top: 198px;
+}
+
+.review__title {
+  @include boldfont;
+  margin: 0 0 31px 0;
+  padding: 0 20px;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.review__text {
+  @include normalfont;
+  margin: 0 0 19px 0;
+  padding: 0 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  color: #333333;
+}
+
+.review__block {
+  position: relative;
+}
+
+.review__block--style::before {
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 1px;
+  top: 0;
+  left: 0;
+  background-color: #e5e5e5;
+}
+
+.review__submit {
+  margin-left: 20px;
+}
