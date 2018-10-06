@@ -45,12 +45,12 @@
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans","Verdana", sans-serif;
-}
 
-.interview__name-input::placeholder {
-  @include boldfont;
-  line-height: 26px;
-  color: black;
+  &::placeholder {
+    @include boldfont;
+    line-height: 26px;
+    color: black;
+  }
 }
 
 .interview__contacts-label {
@@ -72,12 +72,12 @@
   height: 58px;
   border: none;
   background-color: #f2f2f2;
-}
 
-.interview__contacts-input::placeholder {
-  @include boldfont;
-  line-height: 26px;
-  color: black;
+  &::placeholder {
+    @include boldfont;
+    line-height: 26px;
+    color: black;
+  }
 }
 
 .interview__impression-list {
@@ -135,12 +135,12 @@
   background-color: #f2f2f2;
   font-family: "PT Sans","Verdana", sans-serif;
   @include normalfont;
-}
 
-.interview__emotion-textarea::placeholder {
-  @include boldfont;
-  line-height: 26px;
-  color: black;
+  &::placeholder {
+    @include boldfont;
+    line-height: 26px;
+    color: black;
+  }
 }
 
 .interview__submit {
@@ -153,12 +153,12 @@
   font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-}
 
-.interview__submit--style {
-  color: white;
-  background-color: #81b3d2;
-  cursor: pointer;
+  &--style {
+    color: white;
+    background-color: #81b3d2;
+    cursor: pointer;
+  }
 }
 
 .interview__impression-label::before {
