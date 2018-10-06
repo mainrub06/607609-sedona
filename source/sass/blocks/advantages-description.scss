@@ -16,9 +16,6 @@
   @include boldfont;
   line-height: 26px;
   text-transform: uppercase;
-}
-
-.advantage-description__title-bold {
   color: white;
 }
 
@@ -30,14 +27,11 @@
   margin: 0;
   padding: 0 20px;
   text-align: center;
-}
-
-.advantage-description__number {
   margin-top: 10px;
-}
 
-.advantage-description__number::before {
-  color: white;
+  &::before {
+    color: white;
+  }
 }
 
 .advantage-description__text {
@@ -64,17 +58,17 @@
 }
 
 .advantage-description__services-title {
+  @include boldfont;
   margin: 0;
   padding-top: 36px;
-  @include boldfont;
   text-transform: uppercase;
   line-height: 26px;
 }
 
 .advantage-description__services-text {
+  @include normalfont;
   margin: 0;
   margin-top: 18px;
-  @include normalfont;
   line-height: 21px;
   text-transform: uppercase;
   color: #333333;

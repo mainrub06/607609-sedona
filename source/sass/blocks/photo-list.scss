@@ -39,8 +39,7 @@
   width: 22px;
   height: 22px;
   border: none;
-  background-color: none;
-  background: url("/img/icon-like.svg") no-repeat center center;
+  background: transparent url("/img/icon-like.svg") no-repeat center center;
   cursor: pointer;
 }
 
@@ -61,7 +60,7 @@
   height: 1px;
   top: 0;
   left: 0;
-  background-color:  #e5e5e5;
+  background-color: #e5e5e5;
 }
 
 .photo-list__item--style:last-child::after {
@@ -71,5 +70,5 @@
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color:  #e5e5e5;
+  background-color: #e5e5e5;
 }

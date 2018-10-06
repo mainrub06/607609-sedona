@@ -12,9 +12,8 @@
 }
 
 .interview__title {
-  margin: 0 0 24px 0;
-
   @include boldfont;
+  margin: 0 0 24px 0;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
@@ -31,8 +30,8 @@
 }
 
 .interview__name-label {
-  margin-right: 14px;
   @include normalfont;
+  margin-right: 14px;
   line-height: 26px;
   text-transform: uppercase;
   color: #333333;
@@ -44,7 +43,7 @@
   height: 58px;
   border: none;
   background-color: #f2f2f2;
-  font-family: "PT Sans","Verdana", sans-serif;
+  font-family: "PT Sans", "Verdana", sans-serif;
 
   &::placeholder {
     @include boldfont;
@@ -54,21 +53,21 @@
 }
 
 .interview__contacts-label {
+  @include normalfont;
   display: block;
   margin-top: 14px;
-  @include normalfont;
   line-height: 26px;
   text-transform: uppercase;
   color: #333333;
 }
 
 .interview__contacts-input {
+  @include normalfont;
   box-sizing: border-box;
   width: 100%;
   padding: 0 22px 0 22px;
   margin-top: 9px;
-  font-family: "PT Sans","Verdana", sans-serif;
-  @include normalfont;
+  font-family: "PT Sans", "Verdana", sans-serif;
   height: 58px;
   border: none;
   background-color: #f2f2f2;
@@ -95,13 +94,12 @@
 }
 
 .interview__impression-label {
+  @include boldfont;
   display: block;
   position: relative;
-  @include boldfont;
   line-height: 26px;
   padding-left: 78px;
   cursor: pointer;
-
 }
 
 .interview__showplace-list {
@@ -119,22 +117,22 @@
 }
 
 .interview__showplace-label {
+  @include boldfont;
   display: block;
   position: relative;
   padding-left: 78px;
-  @include boldfont;
   line-height: 26px;
   cursor: pointer;
 }
 
 .interview__emotion-textarea {
+  @include normalfont;
   width: 248px;
   height: 160px;
   padding: 22px 10px 0 22px;
   border: none;
   background-color: #f2f2f2;
-  font-family: "PT Sans","Verdana", sans-serif;
-  @include normalfont;
+  font-family: "PT Sans", "Verdana", sans-serif;
 
   &::placeholder {
     @include boldfont;
@@ -148,7 +146,7 @@
   height: 58px;
   border: none;
   padding: 0;
-  font-family: "PT Sans";
+  font-family: "PT Sans", "Verdana", sans-serif;
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;

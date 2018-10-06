@@ -7,13 +7,12 @@
 .introduction__image {
   display: flex;
   margin: 0 auto;
-
 }
 
 .introduction--image {
   background:
-  url("/img/bg-intro-triangle-mobile.svg") repeat-x 0 363px,
-  url("/img/bg-back-mobile@1x.jpg") no-repeat top center;
+    url("/img/bg-intro-triangle-mobile.svg") repeat-x 0 363px,
+    url("/img/bg-back-mobile@1x.jpg") no-repeat top center;
 }
 
 .introduction__title {
@@ -27,16 +26,14 @@
 .introduction__title-bold {
   @include boldfont;
   text-transform: uppercase;
-
 }
 
 .introduction__description {
+  @include normalfont;
   margin: 0;
   margin-top: 32px;
-  @include normalfont;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
-
 }

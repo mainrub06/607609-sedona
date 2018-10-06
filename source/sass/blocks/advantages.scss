@@ -3,6 +3,7 @@
 }
 
 .advantages__list {
+  counter-reset: number;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -25,14 +26,13 @@
   padding: 21px 20px 13px 20px;
   margin: 0;
   text-align: center;
-
 }
 
 .advantages__text {
+  @include normalfont;
   margin: 0;
   margin-top: 20px;
   padding: 0 35px 30px 35px;
-  @include normalfont;
   line-height: 21px;
   color: #333333;
   text-transform: uppercase;
@@ -43,20 +43,11 @@
   background-color: #eeeeee;
 }
 
-
-
-//-Пример использования счетчика в CSS.---
-.advantages__list {
-  counter-reset: number;
-}
-
 .advantages__number::before {
+  @include normalfont;
   counter-increment: number;
   content: "- №"counter(number) " -";
   color: #333333;
-  @include normalfont;
   line-height: 21px;
   margin: 0;
 }
-
-//------------------------------------------

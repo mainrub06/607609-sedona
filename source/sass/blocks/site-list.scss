@@ -1,5 +1,4 @@
 .site-list {
-  // display: none;
   width: 320px;
   list-style: none;
   margin: 0;
@@ -7,17 +6,14 @@
 }
 
 .site-list__item {
-  // display: flex;
-  // justify-content: center;
-  // align-items: center;
   min-height: 56px;
   background-color: #81b3d2;
 }
 
 .site-list__link {
+  @include boldfont;
   display: block;
   padding: 8px 20px;
-  @include boldfont;
   line-height: 40px;
   text-align: center;
   color: white;

@@ -26,20 +26,18 @@
   right: 20px;
   top: 17px;
   border: none;
-  background-color: none;
-  background: url("/img/icon-cross.svg") no-repeat center center;
+  background: transparent url("/img/icon-cross.svg") no-repeat center center;
   cursor: pointer;
-}
 
-.main-nav__toggle::before {
-  content: "";
-  position: absolute;
-  width: 23px;
-  height: 22px;
-  left: 0px;
-  top: 225px;
-  border: none;
-  background-color: none;
-  background: url("/img/icon-menu.svg") no-repeat center center;
-  cursor: pointer;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 23px;
+    height: 22px;
+    left: 0;
+    top: 225px;
+    border: none;
+    background: transparent url("/img/icon-menu.svg") no-repeat center center;
+    cursor: pointer;
+  }
 }
