@@ -1,13 +1,13 @@
 .footer-page {
   font-family: "PT Sans", "Verdana", sans-serif;
-  width: 320px;
+  min-width: 320px;
   margin: 0 auto;
 }
 
 .footer-page__instagram {
   width: 280px;
   padding: 0 20px;
-  margin: 39px 0 40px 0;
+  margin: 37px auto 35px auto;
 }
 
 .footer-page__hashtag {
@@ -46,7 +46,7 @@
   justify-content: space-around;
   width: 140px;
   margin: 0 auto;
-  margin-top: 40px;
+  margin-top: 38px;
   margin-bottom: 23px;
 }
 

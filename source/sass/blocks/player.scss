@@ -1,9 +1,10 @@
 .player {
   width: 320px;
+  margin-bottom: 74px;
 }
 
 .player__title {
-  margin: 35px 0 34px 0;
+  margin: 35px 0 26px 0;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
@@ -12,12 +13,17 @@
 }
 
 .player__text {
-  margin: 0 0 37px 0;
+  margin: 0 0 35px 0;
+  padding: 0 25px;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.player__block {
+  display: block;
 }
 
 .player__window {
@@ -30,7 +36,7 @@
   align-items: center;
   width: 280px;
   height: 66px;
-  margin-left: 20px;
+  margin: -5px 0 0 20px;
   background-color: #f2f2f2;
 }
 
