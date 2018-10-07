@@ -52,9 +52,46 @@
 
 .footer-page__developer-text {
   margin: 0;
-
   font-weight: 400;
   font-size: 14px;
   line-height: 26px;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+
+  .footer-page {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 648px;
+    min-height: 120px;
+    padding: 0 60px;
+  }
+
+  .footer-page__instagram {
+    width: 140px;
+    margin: 0;
+    padding: 0 1px;
+  }
+
+  .footer-page__social {
+    margin: 0;
+  }
+
+  .footer-page__hashtag {
+    margin: 0;
+
+  }
+
+  .footer-page__developer {
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .footer-page {
+    width: 960px;
+    padding: 0 120px;
+  }
 }
