@@ -51,3 +51,21 @@
   line-height: 21px;
   margin: 0;
 }
+
+@media (min-width: $tablet-width) {
+
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 768px;
+  }
+
+  .advantages__item {
+    width: 256px;
+
+    &:nth-of-type(1) {
+
+    }
+  }
+}

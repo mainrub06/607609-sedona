@@ -8,15 +8,17 @@
 
   .page-main {
     width: 768px;
+    margin: 0 auto;
   }
 
 
 }
 
-@media (min-width: $tablet-width) {
+@media (min-width: $desktop-width) {
 
   .page-main {
     width: 1200px;
+    margin: 0 auto;
   }
 
 

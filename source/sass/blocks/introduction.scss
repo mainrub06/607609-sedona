@@ -36,3 +36,33 @@
   text-transform: uppercase;
   color: #333333;
 }
+
+@media (min-width: $tablet-width) {
+  .introduction {
+    width: 728px;
+    padding-top: 77px;
+  }
+
+  .introduction--image {
+    background:
+      url("/img/bg-intro-triangle-tablet.svg") repeat-x 0 462px,
+      url("/img/bg-back-tablet@1x.jpg") no-repeat top center;
+  }
+  .introduction__image {
+    width: 460px;
+    height: 350px;
+  }
+
+  .introduction__title {
+    padding: 0 122px;
+    margin-top: 144px;
+  }
+
+  .introduction__title-bold {
+    font-size: 21px;
+  }
+
+  .introduction__description {
+    margin: 35px 0 53px 0;
+  }
+}
