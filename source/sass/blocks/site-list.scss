@@ -1,0 +1,22 @@
+.site-list {
+  width: 320px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-list__item {
+  min-height: 56px;
+  background-color: #81b3d2;
+}
+
+.site-list__link {
+  @include boldfont;
+  display: block;
+  padding: 8px 20px;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
