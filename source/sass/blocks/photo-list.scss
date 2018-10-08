@@ -71,3 +71,53 @@
   left: 0;
   background-color: #e5e5e5;
 }
+
+@media (min-width: $tablet-width) {
+  .photo-list {
+    width: 648px;
+    padding: 0 60px;
+  }
+
+  .photo-list__item--style::before,
+  .photo-list__item--style:last-child::after {
+    display: none;
+  }
+
+  .photo-list__item {
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    position: relative;
+    width: 324px;
+    min-height: 347px;
+    padding: 284px 0 0 20px;
+
+    &:first-child {
+      width: 648px;
+      min-height: 480px;
+      padding-top: 418px;
+      padding-right: 20px;
+      background: #f2f2f2 url("/img/photo-sunset-tablet@1x.jpg") no-repeat;
+    }
+
+    &:nth-child(2) {
+      background: #f2f2f2 url("/img/photo-cactus-tablet@1x.jpg") no-repeat;
+      padding-right: 30px;
+    }
+
+    &:nth-child(3) {
+      background: #eaeaea url("/img/photo-roads-tablet@1x.jpg") no-repeat;
+      padding-right: 36px;
+    }
+
+    &:nth-child(4) {
+      background: #f2f2f2 url("/img/photo-bridge-tablet@1x.jpg") no-repeat;
+      padding-right: 30px;
+    }
+  }
+
+  .photo-list__picture {
+    position: absolute;
+    visibility: hidden;
+  }
+}

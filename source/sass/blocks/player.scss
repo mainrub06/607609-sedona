@@ -70,3 +70,32 @@
   background: url("/img/icon-video-fullscreen.svg") no-repeat center center;
   cursor: pointer;
 }
+
+
+@media (min-width: $tablet-width) {
+  .player {
+    width: 768px;
+    margin-bottom: 74px;
+  }
+
+  .player__title {
+    font-size: 30px;
+  }
+
+  .player__text {
+    padding: 0 165px;
+  }
+
+  .player__block {
+    padding: 0 60px;
+  }
+
+  .player__window {
+    width: 648px;
+    height: 499px;
+  }
+
+  .player__buttons {
+
+  }
+}
