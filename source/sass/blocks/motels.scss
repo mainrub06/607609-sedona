@@ -45,3 +45,46 @@
   width: 320px;
   height: 350px;
 }
+
+
+@media (min-width: $tablet-width) {
+  .motels {
+    width: 768px;
+  }
+
+  .motels__button {
+    width: 459px;
+    margin: 0 auto 58px auto;
+    padding: 16px 40px;
+  }
+
+  .motels__map {
+    width: 768px;
+    height: 350px;
+    background: transparent url("/img/bg-map-tablet@1x.jpg") no-repeat;
+  }
+
+  .motels__image {
+    opacity: 0;
+  }
+
+  .motels__title {
+    margin: 58px 0 36px 0;
+    font-size: 30px;
+  }
+
+  .motels__text {
+    padding: 0 185px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .motels {
+    width: 1200px;
+  }
+
+  .motels__map {
+    width: 1200px;
+    background: transparent url("/img/bg-map-desktop@1x.jpg") no-repeat;
+  }
+}

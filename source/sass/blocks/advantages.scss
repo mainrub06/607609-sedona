@@ -63,9 +63,21 @@
 
   .advantages__item {
     width: 256px;
+    min-height: 256px;
+  }
+}
 
-    &:nth-of-type(1) {
+@media (min-width: $desktop-width) {
 
-    }
+  .advantages__list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 0;
+    width: 1200px;
+  }
+
+  .advantages__item {
+    width: 400px;
+    min-height: 256px;
   }
 }
