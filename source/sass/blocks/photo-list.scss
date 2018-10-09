@@ -128,11 +128,6 @@
     padding: 0;
   }
 
-
-
-
-
-
   .photo-list__item {
     display: flex;
     justify-content: space-between;
@@ -168,9 +163,10 @@
       height: 79px;
       position: absolute;
       bottom: 0;
-      background-color: rgba(0,0,0,0.3);
+      background-color: rgba(0, 0, 0, 0.3);
     }
   }
+
   .photo-list__wrap-left,
   .photo-list__wrap-right {
     position: absolute;

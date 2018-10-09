@@ -56,14 +56,12 @@
 
   .gallery__text {
     padding: 0 165px;
-
   }
 
   .gallery__list {
     display: flex;
     flex-wrap: wrap;
   }
-
 }
 
 @media (min-width: $desktop-width) {
