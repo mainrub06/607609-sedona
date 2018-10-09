@@ -50,7 +50,8 @@
         </div>
         <div class="review__block interview__contacts review__block--style">
           <p class="interview__title"><b class="interview__bold">Контактная информация:</b></p>
-          <label class="interview__contacts-label" for="phone">Контактный телефон<sup>*</sup>:</label>
+          <label class="interview__contacts-label" for="phone"><span class="interview__contacts-hidden">Контактный
+            </span>телефон<sup>*</sup>:</label>
           <input class="interview__contacts-input" type="text" id="phone" name="number" placeholder="Введите телефон">
           <label class="interview__contacts-label" for="email">Электронная почта<sup>*</sup>:</label>
           <input class="interview__contacts-input" type="email" id="email" name="email" placeholder="Введите e-mail">
@@ -98,7 +99,10 @@
           <p class="interview__title"><b class="interview__bold">Опишите свои эмоции:</b></p>
           <textarea class="interview__emotion-textarea" name="feedback-text" id="#" placeholder="Опишите подробно все свои восторги"></textarea>
         </div>
-        <button class="review__submit interview__submit interview__submit--style" type="submit">Отправить отзыв</button>
+        <div class="review__submit-wrap">
+          <button class="review__submit interview__submit interview__submit--style" type="submit">Отправить отзыв</button>
+          <p class="review__comment"><sup>*</sup>&ndash;обязательные поля</p>
+        </div>
       </form>
     </section>
   </main>
