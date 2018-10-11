@@ -1,10 +1,10 @@
 .motels {
   width: 320px;
+  padding: 20px 0;
 }
 
 .motels__title {
   margin: 0;
-  margin-top: 30px;
   padding: 0 20px;
   font-weight: 700;
   font-size: 21px;
@@ -15,9 +15,9 @@
 }
 
 .motels__text {
-  margin: 25px 0 40px 0;
+  margin: 20px 0 36px 0;
   padding: 0 20px;
-  font-weight: 400px;
+  font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   text-transform: uppercase;
@@ -27,12 +27,13 @@
 
 .motels__button {
   display: block;
-  width: 190px;
-  padding: 15px 45px;
+  width: 200px;
+  padding: 15px 40px;
   margin-left: 20px;
   margin-bottom: 49px;
   text-align: center;
   text-decoration: none;
+  text-transform: uppercase;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
@@ -43,4 +44,47 @@
 .motels__map {
   width: 320px;
   height: 350px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .motels {
+    width: 768px;
+  }
+
+  .motels__button {
+    width: 459px;
+    margin: 0 auto 58px auto;
+    padding: 16px 40px;
+  }
+
+  .motels__map {
+    width: 768px;
+    height: 350px;
+    background: transparent url("/img/bg-map-tablet@1x.jpg") no-repeat;
+  }
+
+  .motels__image {
+    opacity: 0;
+  }
+
+  .motels__title {
+    margin: 58px 0 36px 0;
+    font-size: 30px;
+  }
+
+  .motels__text {
+    padding: 0 185px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .motels {
+    width: 1200px;
+  }
+
+  .motels__map {
+    width: 1200px;
+    background: transparent url("/img/bg-map-desktop@1x.jpg") no-repeat;
+  }
 }

@@ -5,7 +5,7 @@
 }
 
 .introduction__image {
-  display: flex;
+  display: block;
   margin: 0 auto;
 }
 
@@ -30,10 +30,67 @@
 
 .introduction__description {
   @include normalfont;
-  margin: 0;
-  margin-top: 32px;
+  margin: 27px 0 5px 0;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
   color: #333333;
+}
+
+@media (min-width: $tablet-width) {
+  .introduction {
+    width: 728px;
+    padding-top: 77px;
+  }
+
+  .introduction--image {
+    background:
+      url("/img/bg-intro-triangle-tablet.svg") repeat-x 0 462px,
+      url("/img/bg-back-tablet@1x.jpg") no-repeat top center;
+  }
+
+  .introduction__image {
+    width: 460px;
+    height: 350px;
+  }
+
+  .introduction__title {
+    padding: 0 122px;
+    margin-top: 144px;
+  }
+
+  .introduction__title-bold {
+    font-size: 21px;
+  }
+
+  .introduction__description {
+    margin: 35px 0 53px 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .introduction {
+    width: 960px;
+    padding: 78px 120px 0 120px;
+  }
+
+  .introduction--image {
+    background:
+      url("/img/bg-intro-triangle-desktop.svg") repeat-x 0 462px,
+      url("/img/bg-back-desktop@1x.jpg") no-repeat top center;
+  }
+
+  .introduction__image {
+    width: 460px;
+    height: 350px;
+  }
+
+  .introduction__title {
+    padding: 0 180px;
+    margin-top: 145px;
+  }
+
+  .introduction__description {
+    margin: 35px 0 50px 0;
+  }
 }

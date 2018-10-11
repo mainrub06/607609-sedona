@@ -9,7 +9,7 @@
 
 .review__title {
   @include boldfont;
-  margin: 0 0 31px 0;
+  margin: 0 0 25px 0;
   padding: 0 20px;
   line-height: 26px;
   text-transform: uppercase;
@@ -18,7 +18,7 @@
 
 .review__text {
   @include normalfont;
-  margin: 0 0 19px 0;
+  margin: 0 0 16px 0;
   padding: 0 20px;
   line-height: 24px;
   text-transform: uppercase;
@@ -42,4 +42,98 @@
 
 .review__submit {
   margin-left: 20px;
+}
+
+.review__comment {
+  display: none;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .review__block--style::before {
+    display: none;
+  }
+
+  .review {
+    position: relative;
+    width: 648px;
+    padding: 0 60px;
+    background: url("/img/bg-intro-triangle-tablet.svg") no-repeat 0 231px, url("/img/bg-back-tablet@1x.jpg") no-repeat center -231px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 458px;
+      height: 78px;
+      top: 95px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url("/img/text-sedona.svg") no-repeat;
+      background-size: 458px 78px;
+      z-index: 1;
+    }
+  }
+
+  .review__top {
+    padding-top: 362px;
+  }
+
+  .review__title {
+    font-size: 30px;
+  }
+
+  .review__text {
+    padding: 0 105px;
+    margin-bottom: 79px;
+  }
+
+  .review__comment {
+    display: block;
+  }
+
+  .review__submit-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 648px;
+    margin-top: 58px;
+    margin-bottom: 60px;
+    order: 6;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .review {
+    position: relative;
+    width: 960px;
+    padding: 0 120px;
+    background: url("/img/bg-intro-triangle-desktop.svg") no-repeat 0 230px, url("/img/bg-back-desktop@1x.jpg") no-repeat center -231px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 461px;
+      height: 79px;
+      top: 102px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: url("/img/text-sedona.svg") no-repeat;
+      background-size: 458px 78px;
+      z-index: 1;
+    }
+  }
+
+  .review__text {
+    padding: 0 260px;
+  }
+
+  .review__submit-wrap {
+    width: 960px;
+  }
+
+  .review__submit {
+    width: 480px;
+  }
 }
