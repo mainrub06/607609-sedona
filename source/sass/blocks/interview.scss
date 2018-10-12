@@ -1,17 +1,25 @@
 .interview {
   min-width: 320px;
+  margin-bottom: 55px;
 }
 
-.interview__name,
-.interview__contacts,
-.interview__impression,
-.interview__showplace,
-.interview__emotion {
-  width: 280px;
-  padding: 21px 20px 26px 20px;
+.interview__name {
+  padding: 18px 20px 23px 20px;
 }
 
 .interview__contacts {
+  padding: 18px 20px 26px 20px;
+}
+
+.interview__impression {
+  padding: 18px 20px 46px 20px;
+}
+
+.interview__showplace {
+  padding: 18px 20px 42px 20px;
+}
+
+.interview__emotion {
   padding: 18px 20px 26px 20px;
 }
 
@@ -21,6 +29,26 @@
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
+}
+
+.interview__name .interview__title {
+  margin: 0 0 23px 0;
+}
+
+.interview__contacts .interview__title {
+  margin: 0 0 17px 0;
+}
+
+.interview__impression .interview__title {
+  margin: 0 0 37px 0;
+}
+
+.interview__showplace .interview__title {
+  margin: 0 0 31px 0;
+}
+
+.interview__emotion .interview__title {
+  margin: 0 0 18px 0;
 }
 
 .interview__name-wrap {
@@ -59,7 +87,7 @@
 .interview__contacts-label {
   @include normalfont;
   display: block;
-  margin-top: 0;
+  margin-top: 6px;
   padding-left: 22px;
   line-height: 26px;
   text-transform: uppercase;
@@ -95,7 +123,7 @@
 }
 
 .interview__impression-item:not(:last-child) {
-  margin-bottom: 56px;
+  margin-bottom: 42px;
 }
 
 .interview__impression-label {
@@ -114,7 +142,7 @@
 }
 
 .interview__showplace-item:not(:last-child) {
-  margin-bottom: 56px;
+  margin-bottom: 54px;
 }
 
 .interview__showplace-checkbox {
@@ -133,8 +161,8 @@
 .interview__emotion-textarea {
   @include normalfont;
   width: 248px;
-  height: 160px;
-  padding: 22px 10px 0 22px;
+  height: 145px;
+  padding: 15px 10px 0 22px;
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Verdana", sans-serif;
@@ -151,6 +179,7 @@
   height: 58px;
   border: none;
   padding: 0;
+  margin-top: 21px;
   font-family: "PT Sans", "Verdana", sans-serif;
   font-weight: 700;
   font-size: 21px;
