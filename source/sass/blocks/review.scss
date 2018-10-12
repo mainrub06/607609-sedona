@@ -1,15 +1,15 @@
 .review {
   width: 320px;
-  background: url("/img/text-sedona.svg") no-repeat 50% 52px, url("/img/bg-intro-triangle-mobile.svg") no-repeat 0 132px, url("/img/bg-back-mobile@1x.jpg") no-repeat center -231px;
+  background: url("/img/text-sedona.svg") no-repeat 50% 52px, url("/img/bg-intro-triangle-mobile.svg") no-repeat 0 133px, url("/img/bg-back-mobile@1x.jpg") no-repeat center -231px;
 }
 
 .review__top {
-  padding-top: 198px;
+  padding-top: 195px;
 }
 
 .review__title {
   @include boldfont;
-  margin: 0 0 25px 0;
+  margin: 0 0 27px 0;
   padding: 0 20px;
   line-height: 26px;
   text-transform: uppercase;
@@ -18,7 +18,7 @@
 
 .review__text {
   @include normalfont;
-  margin: 0 0 16px 0;
+  margin: 0 0 18px 0;
   padding: 0 20px;
   line-height: 24px;
   text-transform: uppercase;
