@@ -96,4 +96,12 @@
     width: 400px;
     min-height: 256px;
   }
+
+  .advantages__title {
+    padding: 25px 120px 10px 120px;
+  }
+
+  .advantages__item:nth-child(4) .advantages__text {
+    padding: 0 70px;
+  }
 }

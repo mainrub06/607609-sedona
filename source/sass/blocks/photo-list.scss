@@ -192,10 +192,12 @@
   }
 
   .photo-list__wrap-left {
-    margin-left: auto;
+    left: 20px;
+    bottom: 18px;
   }
 
   .photo-list__wrap-right {
-    right: 0;
+    right: 20px;
+    bottom: 28px;
   }
 }
