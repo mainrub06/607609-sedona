@@ -118,14 +118,18 @@
   .player {
     width: 768px;
     margin-bottom: 74px;
+    margin-bottom: 40px;
+    padding-top: 67px;
   }
 
   .player__title {
     font-size: 30px;
+    margin: 0 0 32px 0;
   }
 
   .player__text {
     padding: 0 165px;
+    margin-bottom: 74px;
   }
 
   .player__block {

@@ -102,23 +102,39 @@
 
     &--image-nature {
       background: #f2f2f2 url("/img/photo-cactus-tablet@1x.jpg") no-repeat;
-      padding-right: 30px;
+      padding-right: 21px;
     }
 
     &--image-north {
       background: #eaeaea url("/img/photo-roads-tablet@1x.jpg") no-repeat;
-      padding-right: 36px;
+      padding-right: 21px;
     }
 
     &--image-bridge {
       background: #f2f2f2 url("/img/photo-bridge-tablet@1x.jpg") no-repeat;
-      padding-right: 30px;
+      padding-right: 21px;
     }
   }
 
   .photo-list__picture {
     position: absolute;
     visibility: hidden;
+  }
+
+  .photo-list__button {
+    width: 22px;
+    height: 22px;
+    margin: 10px 10px 0 0;
+  }
+
+  .photo-list__wrap-right {
+    display: flex;
+    width: 65px;
+    right: 0;
+  }
+
+  .photo-list__likes {
+    margin-top: 11px;
   }
 }
 
