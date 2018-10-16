@@ -97,6 +97,10 @@
     padding: 0 20px;
   }
 
+  .advantage-description__block-left .advantage-description__title {
+    padding: 0 52.5px;
+  }
+
   .advantage-description__title-bold {
     font-size: 21px;
     text-align: center;
@@ -104,6 +108,7 @@
 
   .advantage-description__text {
     padding: 0 45px;
+    margin: 22px 0 39px 0;
   }
 
   .advantage-description__photo {
@@ -148,13 +153,19 @@
   }
 
   .advantage-description__services-title {
+    font-size: 21px;
     padding-top: 162px;
     text-align: center;
   }
 
   .advantage-description__services-text {
-    padding: 0 45px;
+    padding: 0 47px;
+    margin-top: 20px;
     text-align: center;
+  }
+
+  .advantage-description__services-item:nth-of-type(3) .advantage-description__services-text {
+    padding: 0 49px;
   }
 
   .advantage-description__block-left {

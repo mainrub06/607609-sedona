@@ -50,12 +50,14 @@
 @media (min-width: $tablet-width) {
   .motels {
     width: 768px;
+    padding-top: 57px;
+    padding-bottom: 0;
   }
 
   .motels__button {
-    width: 459px;
+    width: 378px;
     margin: 0 auto 58px auto;
-    padding: 16px 40px;
+    padding: 17px 40px;
   }
 
   .motels__map {
@@ -69,12 +71,21 @@
   }
 
   .motels__title {
-    margin: 58px 0 36px 0;
+    margin-bottom: 30px;
     font-size: 30px;
   }
 
   .motels__text {
+    padding: 0;
+    margin-bottom: 42px;
+  }
+
+  .motels__text-space:nth-child(1) {
     padding: 0 185px;
+  }
+
+  .motels__text-space:nth-child(2) {
+    padding: 0 150px;
   }
 }
 
