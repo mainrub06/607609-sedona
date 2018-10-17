@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  width: 320px;
+  width: auto;
   min-height: 279px;
 }
 
@@ -48,12 +48,13 @@
   }
 
   .main-nav {
-    width: 768px;
-    min-height: 56px;
+    width: auto;
+    min-height: 7%;
   }
 
   .main-nav__list {
-    min-height: 56px;
+    margin: 0 auto;
+    min-height: 7%;
   }
 
   .main-nav__logo {
@@ -68,7 +69,7 @@
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1200px;
+    min-width: 1200px;
     min-height: 56px;
   }
 

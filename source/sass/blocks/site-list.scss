@@ -1,5 +1,5 @@
 .site-list {
-  width: 320px;
+  width: auto;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -24,28 +24,20 @@
   .site-list {
     display: flex;
     align-items: center;
-    width: 728px;
-    padding: 0 20px;
+    min-width: 768px;
+    max-width: 1199px;
+    box-sizing: border-box;
+    padding: 0;
   }
 
   .site-list__item {
+    box-sizing: border-box;
+    width: 20%;
     background-color: white;
-    padding: 15px 29px;
-
-    &:nth-child(1) {
-      margin-right: 19px;
-    }
+    padding: 15px 2%;
 
     &:nth-child(2) {
-      margin-right: 151px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 14px;
-    }
-
-    &:last-child {
-      padding: 15px 6px;
+      margin-right: 20%;
     }
   }
 
@@ -59,28 +51,20 @@
 
 @media (min-width: $desktop-width) {
   .site-list {
-    width: 1076px;
-    padding: 0 62px;
+    max-width: 1200px;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   .site-list__item {
     background-color: white;
     padding: 15px 29px;
+    width: 20%;
+    box-sizing: border-box;
 
-    &:nth-child(1) {
-      margin-right: 104px;
-    }
 
     &:nth-child(2) {
-      margin-right: 324px;
-    }
-
-    &:nth-child(3) {
-      margin-right: 100px;
-    }
-
-    &:last-child {
-      padding: 15px 8px;
+      margin-right: 20%;
     }
   }
 }
