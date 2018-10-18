@@ -1,5 +1,6 @@
 .player {
   width: 320px;
+  margin: 0 auto;
   margin-bottom: 74px;
 }
 
@@ -116,7 +117,7 @@
 
 @media (min-width: $tablet-width) {
   .player {
-    width: 768px;
+    width: auto;
     margin-bottom: 74px;
     margin-bottom: 40px;
     padding-top: 67px;
@@ -138,9 +139,10 @@
   }
 
   .player__window-wrap {
-    width: 648px;
+    max-width: 800px;
     height: 499px;
-    background: transparent url("/img/video-tablet@1x.jpg") no-repeat;
+    margin: 0 auto;
+    background: transparent url("/img/video-desktop@1x.jpg") no-repeat top center;
   }
 
   .player__window {
@@ -155,7 +157,8 @@
     height: 93px;
     margin: 0;
     bottom: 0;
-    left: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
   }
 
@@ -251,7 +254,8 @@
   .player__buttons {
     width: 800px;
     height: 93px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .player__buttons-line {
