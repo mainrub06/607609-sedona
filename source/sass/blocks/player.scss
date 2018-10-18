@@ -52,6 +52,22 @@
 .player__button-fullscreen {
   border: none;
   background-color: none;
+
+  &:hover path {
+    fill: #333333;
+  }
+
+  &:hover polygon {
+    fill: #333333;
+  }
+
+  &:active path {
+    fill: #b8b8b8;
+  }
+
+  &:active polygon {
+    fill: #b8b8b8;
+  }
 }
 
 .player__button-reply {
@@ -161,6 +177,27 @@
     transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+  .player__button-reply,
+  .player__button-CC,
+  .player__button-fullscreen {
+    &:hover path {
+      opacity: 0.6;
+    }
+
+    &:hover polygon {
+      opacity: 0.6;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
+
+    &:active polygon {
+      opacity: 0.3;
+    }
+  }
+
 
   .player__button-reply path {
     fill: #ffffff;

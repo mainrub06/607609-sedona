@@ -40,11 +40,33 @@
   line-height: 26px;
   color: white;
   background-color: #81b3d2;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
 }
 
 .motels__map {
   width: 320px;
   height: 350px;
+}
+
+.motels__image {
+  display: none;
+}
+
+.motels__google {
+  width: 320px;
 }
 
 
@@ -87,6 +109,12 @@
 
   .motels__text-space:nth-child(2) {
     padding: 0 20%;
+  }
+
+  .motels__google {
+    width: 100%;
+    min-width: 768px;
+    max-width: 1199px;
   }
 }
 

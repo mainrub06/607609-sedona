@@ -61,6 +61,43 @@
   list-style: none;
 }
 
+.advantage-description__services-item {
+  position: relative;
+
+  &--house::before {
+    content: "";
+    position: absolute;
+    width: 39px;
+    height: 37px;
+    left: -49px;
+    top: 16px;
+    background: transparent url("/img/icon-house.svg") no-repeat center center;
+    background-size: 39px 37px;
+  }
+
+  &--gift::before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 38px;
+    left: -45px;
+    top: 16px;
+    background: transparent url("/img/icon-gift.svg") no-repeat center center;
+    background-size: 32px 38px;
+  }
+
+  &--food::before {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 35px;
+    left: -52px;
+    top: 24px;
+    background: transparent url("/img/icon-burger.svg") no-repeat center center;
+    background-size: 40px 35px;
+  }
+}
+
 .advantage-description__services-title {
   @include boldfont;
   margin: 0;
@@ -152,6 +189,42 @@
 
     &:nth-of-type(3) {
       order: 2;
+    }
+
+    &--house::before {
+      content: "";
+      position: absolute;
+      width: 75px;
+      height: 72px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 60px;
+      background: transparent url("/img/icon-house.svg") no-repeat center center;
+      background-size: 75px 72px;
+    }
+
+    &--gift::before {
+      content: "";
+      position: absolute;
+      width: 64px;
+      height: 75px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 59px;
+      background: transparent url("/img/icon-gift.svg") no-repeat center center;
+      background-size: 64px 75px;
+    }
+
+    &--food::before {
+      content: "";
+      position: absolute;
+      width: 77px;
+      height: 68px;
+      left: 50%;
+      transform: translateX(-50%);
+      top: 65px;
+      background: transparent url("/img/icon-burger.svg") no-repeat center center;
+      background-size: 77px 68px;
     }
   }
 
@@ -252,6 +325,24 @@
 
     &:nth-of-type(3) {
       order: 2;
+    }
+
+    &--house::before {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 60px;
+    }
+
+    &--gift::before {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 59px;
+    }
+
+    &--food::before {
+      left: 50%;
+      transform: translateX(-50%);
+      top: 65px;
     }
   }
 
