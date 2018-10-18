@@ -174,7 +174,7 @@
   @include normalfont;
   width: 100%;
   box-sizing: border-box;
-  height: 145px;
+  height: 160px;
   padding: 15px 10px 0 22px;
   border: none;
   background-color: #f2f2f2;
@@ -239,7 +239,7 @@
   }
 
   .interview__name {
-    width: 35%;
+    width: 41%;
     order: 2;
     padding: 0;
   }
@@ -252,7 +252,7 @@
   }
 
   .interview__contacts-label {
-    margin-top: 18px;
+    margin-top: 16px;
   }
 
   .interview__impression {
@@ -284,8 +284,8 @@
 
   .interview__showplace-list .interview__showplace-item {
     width: 228px;
-    padding-left: 4%;
-    margin-bottom: 8%;
+    padding-left: 6.5%;
+    margin-bottom: 11%;
   }
 
   .interview__name .interview__title,
@@ -308,7 +308,7 @@
   }
 
   .interview__contacts .interview__title {
-    margin-bottom: 22px;
+    margin-bottom: 15px;
     font-size: 21px;
   }
 
@@ -325,7 +325,7 @@
 
   .interview__emotion-textarea {
     width: 100%;
-    height: 143px;
+    height: 160px;
   }
 
   .interview__submit {
@@ -387,7 +387,7 @@
 
   .interview__showplace {
     width: 960px;
-    margin-top: 54px;
+    margin-top: 50px;
   }
 
   .interview__showplace-label {
@@ -396,6 +396,7 @@
 
   .interview__showplace .interview__title {
     padding: 0 280px;
+    margin-bottom: 55px;
   }
 
   .interview__showplace-list {
@@ -407,6 +408,7 @@
   .interview__showplace-list .interview__showplace-item {
     width: 204px;
     padding: 0;
+    margin-bottom: 65px;
   }
 
   .interview__showplace-item:nth-child(2),
