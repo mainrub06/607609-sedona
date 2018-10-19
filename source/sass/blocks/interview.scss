@@ -88,6 +88,16 @@
     line-height: 26px;
     color: black;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: inset 4px 4px 0 0 #e5e5e5, inset -4px -4px 0 0 #e5e5e5;
+    background-color: #ffffff;
+  }
 }
 
 .interview__contacts-label {
@@ -108,19 +118,31 @@
 
 .interview__contacts-input {
   @include normalfont;
+  position: relative;
   box-sizing: border-box;
   width: 100%;
-  padding: 0 22px 0 22px;
+  padding: 0 60px 0 22px;
   margin-top: 9px;
   font-family: "PT Sans", "Verdana", sans-serif;
   height: 58px;
   border: none;
   background-color: #f2f2f2;
+  box-shadow: inset -58px 0 0 0 #e5e5e5;
 
   &::placeholder {
     @include boldfont;
     line-height: 26px;
     color: black;
+  }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: inset 4px 4px 0 0 #e5e5e5, inset -4px -4px 0 0 #e5e5e5;
+    background-color: #ffffff;
   }
 }
 
@@ -185,6 +207,16 @@
     line-height: 26px;
     color: black;
   }
+
+  &:hover {
+    background-color: #e5e5e5;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: inset 4px 4px 0 0 #e5e5e5, inset -4px -4px 0 0 #e5e5e5;
+    background-color: #ffffff;
+  }
 }
 
 .interview__submit {
@@ -203,6 +235,20 @@
     color: white;
     background-color: #81b3d2;
     cursor: pointer;
+  }
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
   }
 }
 
@@ -229,6 +275,47 @@
   border-radius: 6px;
   background-color: #f2f2f2;
 }
+
+.interview__impression-label:hover::before,
+.interview__showplace-label:hover::before {
+  background-color: #e5e5e5;
+}
+
+.interview__impression-label:active::before,
+.interview__showplace-label:active::before {
+  background-color: #d5d5d5;
+}
+
+.interview__impression-radio:checked + .interview__impression-label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  top: 50%;
+  left: 17px;
+  transform: translateY(-50%);
+  background-color: #333333;
+  border-radius: 50%;
+}
+
+.interview__impression-radio:checked + .interview__impression-label:active::after,
+.interview__showplace-checkbox:checked + .interview__showplace-label:active::after {
+  opacity: 0.3;
+}
+
+.interview__showplace-checkbox:checked + .interview__showplace-label::after {
+  content: "";
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  background: transparent url("/img/icon-tick.svg") no-repeat center center;
+  background-size: 25px 19px;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+
 
 @media (min-width: $tablet-width) {
   .interview {
