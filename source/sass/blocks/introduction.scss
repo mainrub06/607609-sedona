@@ -31,7 +31,7 @@
 .introduction__title {
   margin: 0;
   padding: 0 3%;
-  margin-top: 44.5%;
+  margin-top: 124px;
   text-align: center;
   line-height: 26px;
 }
@@ -43,7 +43,7 @@
 
 .introduction__description {
   @include normalfont;
-  margin: 10% 0 2% 0;
+  margin: 28px 0 7px 0;
   line-height: 26px;
   text-align: center;
   text-transform: uppercase;
@@ -56,7 +56,7 @@
     min-width: 768px;
     max-width: 1199px;
     padding-top: 78px;
-    margin-bottom: 6.5%;
+    margin-bottom: 52px;
   }
 
   .introduction--image {
