@@ -1,6 +1,7 @@
 .player {
   width: 320px;
-  margin-bottom: 74px;
+  margin: 0 auto;
+  margin-bottom: 62px;
 }
 
 .player__title {
@@ -51,6 +52,22 @@
 .player__button-fullscreen {
   border: none;
   background-color: none;
+
+  &:hover path {
+    fill: #333333;
+  }
+
+  &:hover polygon {
+    fill: #333333;
+  }
+
+  &:active path {
+    fill: #b8b8b8;
+  }
+
+  &:active polygon {
+    fill: #b8b8b8;
+  }
 }
 
 .player__button-reply {
@@ -116,16 +133,19 @@
 
 @media (min-width: $tablet-width) {
   .player {
-    width: 768px;
-    margin-bottom: 74px;
+    width: auto;
+    margin-bottom: 40px;
+    padding-top: 67px;
   }
 
   .player__title {
     font-size: 30px;
+    margin: 0 0 32px 0;
   }
 
   .player__text {
     padding: 0 165px;
+    margin-bottom: 74px;
   }
 
   .player__block {
@@ -134,9 +154,10 @@
   }
 
   .player__window-wrap {
-    width: 648px;
+    max-width: 800px;
     height: 499px;
-    background: transparent url("/img/video-tablet@1x.jpg") no-repeat;
+    margin: 0 auto;
+    background: transparent url("/img/video-desktop@1x.jpg") no-repeat top center;
   }
 
   .player__window {
@@ -151,9 +172,31 @@
     height: 93px;
     margin: 0;
     bottom: 0;
-    left: 60px;
+    left: 50%;
+    transform: translateX(-50%);
     background-color: rgba(0, 0, 0, 0.6);
   }
+
+  .player__button-reply,
+  .player__button-CC,
+  .player__button-fullscreen {
+    &:hover path {
+      opacity: 0.6;
+    }
+
+    &:hover polygon {
+      opacity: 0.6;
+    }
+
+    &:active path {
+      opacity: 0.3;
+    }
+
+    &:active polygon {
+      opacity: 0.3;
+    }
+  }
+
 
   .player__button-reply path {
     fill: #ffffff;
@@ -215,14 +258,17 @@
   .player {
     width: 800px;
     padding: 0 200px;
+    margin-top: 71px;
+    margin-bottom: 85px;
   }
 
   .player__title {
-    margin: 73px 0 26px 0;
+    margin-bottom: 30px;
   }
 
   .player__text {
     padding: 0 180px;
+    margin-bottom: 72px;
   }
 
   .player__window-wrap {
@@ -244,7 +290,8 @@
   .player__buttons {
     width: 800px;
     height: 93px;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .player__buttons-line {

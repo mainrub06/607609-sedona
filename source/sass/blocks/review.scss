@@ -1,6 +1,20 @@
 .review {
-  width: 320px;
-  background: url("/img/text-sedona.svg") no-repeat 50% 52px, url("/img/bg-intro-triangle-mobile.svg") no-repeat 0 133px, url("/img/bg-back-mobile@1x.jpg") no-repeat center -231px;
+  position: relative;
+  min-width: 320px;
+  max-width: 500px;
+  background: url("/img/text-sedona.svg") no-repeat 50% 52px, url("/img/bg-back-mobile@1x.jpg") no-repeat center -231px;
+}
+
+.review::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 26px;
+  top: 133px;
+  left: 0;
+  background: url("/img/bg-intro-triangle-mobile.svg") no-repeat center center;
+  background-size: 100% 26px;
 }
 
 .review__top {
@@ -33,7 +47,7 @@
 .review__block--style::before {
   content: "";
   position: absolute;
-  width: 320px;
+  width: 100%;
   height: 1px;
   top: 0;
   left: 0;
@@ -52,6 +66,12 @@
   line-height: 26px;
 }
 
+.review__comment sup {
+  position: relative;
+  top: 0.35em;
+  font-size: 90%;
+}
+
 @media (min-width: $tablet-width) {
   .review__block--style::before {
     display: none;
@@ -59,9 +79,11 @@
 
   .review {
     position: relative;
-    width: 648px;
-    padding: 0 60px;
-    background: url("/img/bg-intro-triangle-tablet.svg") no-repeat 0 231px, url("/img/bg-back-tablet@1x.jpg") no-repeat center -231px;
+    min-width: 768px;
+    max-width: 1199px;
+    padding: 0 8%;
+    box-sizing: border-box;
+    background: url("/img/bg-back-desktop@1x.jpg") no-repeat center -231px;
 
     &::before {
       content: "";
@@ -77,17 +99,30 @@
     }
   }
 
+  .review::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 57px;
+    top: 233px;
+    left: 0;
+    background: url("/img/bg-intro-triangle-tablet.svg") no-repeat center center;
+    background-size: 100% 57px;
+  }
+
   .review__top {
-    padding-top: 362px;
+    padding-top: 364px;
   }
 
   .review__title {
     font-size: 30px;
+    margin-bottom: 32px;
   }
 
   .review__text {
     padding: 0 105px;
-    margin-bottom: 79px;
+    margin-bottom: 74px;
   }
 
   .review__comment {
@@ -97,9 +132,9 @@
   .review__submit-wrap {
     display: flex;
     justify-content: space-between;
-    width: 648px;
-    margin-top: 58px;
-    margin-bottom: 60px;
+    width: 100%;
+    margin-top: 52px;
+    margin-bottom: 0;
     order: 6;
   }
 }
@@ -107,9 +142,10 @@
 @media (min-width: $desktop-width) {
   .review {
     position: relative;
-    width: 960px;
+    min-width: 960px;
+    max-width: 1199px;
     padding: 0 120px;
-    background: url("/img/bg-intro-triangle-desktop.svg") no-repeat 0 230px, url("/img/bg-back-desktop@1x.jpg") no-repeat center -231px;
+    background: url("/img/bg-intro-triangle-desktop.svg") no-repeat 0 246px, url("/img/bg-back-desktop@1x.jpg") no-repeat center -216px;
 
     &::before {
       content: "";
@@ -125,8 +161,18 @@
     }
   }
 
+  .review::after {
+    display: none;
+  }
+
+  .review__top {
+    padding-top: 413px;
+    margin-bottom: 58px;
+  }
+
   .review__text {
     padding: 0 260px;
+    margin: 0;
   }
 
   .review__submit-wrap {
