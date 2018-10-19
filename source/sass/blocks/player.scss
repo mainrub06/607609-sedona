@@ -119,8 +119,9 @@
 .player__buttons-slider {
   position: absolute;
   display: block;
+  padding: 0;
   width: 9px;
-  height: 11px;
+  height: 9px;
   left: 36px;
   top: 50%;
   transform: translateY(-50%);
@@ -197,7 +198,6 @@
     }
   }
 
-
   .player__button-reply path {
     fill: #ffffff;
   }
@@ -233,8 +233,9 @@
   .player__buttons-slider {
     position: absolute;
     display: block;
+    padding: 0;
     width: 9px;
-    height: 11px;
+    height: 9px;
     left: 113px;
     top: 50%;
     transform: translateY(-50%);

@@ -61,11 +61,15 @@
 
   .main-nav__logo {
     top: 0;
-    background: url("/img/logo-sedona-tablet.svg") no-repeat;
+    width: 188px;
+    height: 96px;
   }
 
   .main-nav__logo-image {
-    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 96px;
+
   }
 }
 
@@ -73,11 +77,5 @@
   .main-nav {
     min-width: 1200px;
     min-height: 56px;
-  }
-
-  .main-nav__logo {
-    width: 188px;
-    height: 96px;
-    background: url("/img/logo-sedona-desktop.svg") no-repeat;
   }
 }
