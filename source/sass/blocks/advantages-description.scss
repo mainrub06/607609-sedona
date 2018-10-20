@@ -1,5 +1,5 @@
 .advantage-description {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   background-color: #81b3d2;
 }
@@ -23,7 +23,7 @@
 
 .advantage-description--svg {
   background: #81b3d2 url("/img/bg-triangle.svg") no-repeat center top;
-  background-size: auto;
+  background-size: 100% 36px;
 }
 
 .advantage-description__number {
@@ -50,8 +50,13 @@
 }
 
 .advantage-description__photo {
-  width: 320px;
+  width: auto;
   height: 260px;
+}
+
+.advantage-description__photo-image {
+  width: 100%;
+  object-fit: cover;
 }
 
 .advantage-description__services-list {
@@ -158,6 +163,7 @@
   .advantage-description__photo-image {
     width: 100%;
     height: 256px;
+    object-fit: cover;
   }
 
   .advantage-description__services-list {
