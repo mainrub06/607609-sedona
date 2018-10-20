@@ -142,7 +142,8 @@
 @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .introduction--image {
     background: url("/img/bg-back-desktop@2x.jpg") no-repeat;
-      background-size: 1200px 518px;
+    background-size: 1200px 518px;
+
     &::after {
       display: block;
       position: absolute;
