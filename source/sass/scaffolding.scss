@@ -16,3 +16,13 @@ img {
 body {
   margin: 0;
 }
+
+.svg-pack {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+  .svg-pack path {
+    fill: #ffffff;
+  }
+}

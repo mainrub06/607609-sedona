@@ -1,6 +1,6 @@
 .main-nav {
   position: relative;
-  width: 320px;
+  width: auto;
   min-height: 279px;
 }
 
@@ -28,6 +28,7 @@
   border: none;
   background: transparent url("/img/icon-cross.svg") no-repeat center center;
   cursor: pointer;
+  z-index: 1;
 
   &::before {
     content: "";
@@ -39,6 +40,7 @@
     border: none;
     background: transparent url("/img/icon-menu.svg") no-repeat center center;
     cursor: pointer;
+    z-index: 0;
   }
 }
 
@@ -48,33 +50,31 @@
   }
 
   .main-nav {
-    width: 768px;
-    min-height: 56px;
+    width: auto;
+    min-height: 7%;
   }
 
   .main-nav__list {
-    min-height: 56px;
+    margin: 0 auto;
+    min-height: 7%;
   }
 
   .main-nav__logo {
     top: 0;
-    background: url("/img/logo-sedona-tablet.svg") no-repeat;
+    width: 188px;
+    height: 96px;
   }
 
   .main-nav__logo-image {
-    opacity: 0;
+    display: block;
+    width: 100%;
+    height: 96px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 1200px;
+    min-width: 1200px;
     min-height: 56px;
-  }
-
-  .main-nav__logo {
-    width: 188px;
-    height: 96px;
-    background: url("/img/logo-sedona-desktop.svg") no-repeat;
   }
 }
