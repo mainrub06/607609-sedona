@@ -41,7 +41,6 @@
   height: 22px;
   border: none;
   background-color: transparent;
-  // background: transparent url("/img/icon-like.svg") no-repeat center center;
   cursor: pointer;
 }
 
@@ -91,7 +90,6 @@
 
   .photo-list__item {
     display: flex;
-    // justify-content: space-between;
     box-sizing: border-box;
     position: relative;
     width: 324px;
@@ -104,7 +102,6 @@
       padding-top: 418px;
       padding-right: 20px;
       background-color: #f2f2f2;
-      // background: #f2f2f2 url("/img/photo-sunset-desktop@1x.jpg") no-repeat top center;
     }
 
     &--image-nature {
@@ -206,5 +203,9 @@
   .photo-list__wrap-right {
     right: 20px;
     bottom: 28px;
+  }
+
+  .icon-like path {
+    fill: #ffffff;
   }
 }

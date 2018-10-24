@@ -182,32 +182,24 @@
   .player__button-reply,
   .player__button-CC,
   .player__button-fullscreen {
-    &:hover path {
+    &:hover {
       opacity: 0.6;
     }
 
-    &:hover polygon {
-      opacity: 0.6;
-    }
-
-    &:active path {
-      opacity: 0.3;
-    }
-
-    &:active polygon {
+    &:active {
       opacity: 0.3;
     }
   }
 
-  .player__button-reply path {
+  .icon-video-fullscreen path {
     fill: #ffffff;
   }
 
-  .player__button-CC path {
+  .icon-video-replay path {
     fill: #ffffff;
   }
 
-  .player__button-fullscreen polygon {
+  .icon-video-subtitles path {
     fill: #ffffff;
   }
 
