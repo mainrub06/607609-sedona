@@ -11,7 +11,7 @@
 
 .introduction--image {
   position: relative;
-  background: url("/img/bg-back-mobile@1x.jpg") no-repeat center top;
+  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
   background-size: 768px 389px;
   z-index: 0;
 }
@@ -24,7 +24,7 @@
   height: 26px;
   top: 364px;
   left: 0;
-  background: url("/img/bg-intro-triangle-mobile.svg") no-repeat center center;
+  background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center center;
   background-size: 100% 26px;
 }
 
@@ -60,7 +60,7 @@
   }
 
   .introduction--image {
-    background: url("/img/bg-back-desktop@1x.jpg") no-repeat top center;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
     background-size: 1200px 518px;
 
     &::after {
@@ -71,7 +71,7 @@
       height: 57px;
       top: 463px;
       left: 0;
-      background: url("/img/bg-intro-triangle-tablet.svg") no-repeat center center;
+      background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center center;
       background-size: 100% 57px;
     }
   }
@@ -104,8 +104,8 @@
 
   .introduction--image {
     background:
-      url("/img/bg-intro-triangle-desktop.svg") repeat-x 0 462px,
-      url("/img/bg-back-desktop@1x.jpg") no-repeat top center;
+      url("../img/bg-intro-triangle-desktop.svg") repeat-x 0 462px,
+      url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
   }
 
   .introduction--image::after {
@@ -129,19 +129,19 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .introduction--image {
-    background-image: url("/img/bg-back-mobile@2x.jpg");
+    background-image: url("../img/bg-back-mobile@2x.jpg");
   }
 }
 
 @media (min-width: $tablet-width) and (min-resolution: 144dpi), (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
   .introduction--image {
-    background-image: url("/img/bg-back-desktop@2x.jpg");
+    background-image: url("../img/bg-back-desktop@2x.jpg");
   }
 }
 
 @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .introduction--image {
-    background: url("/img/bg-back-desktop@2x.jpg") no-repeat;
+    background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
     background-size: 1200px 518px;
 
     &::after {
@@ -151,7 +151,7 @@
       height: 57px;
       top: 463px;
       left: 0;
-      background: url("/img/bg-intro-triangle-desktop.svg");
+      background: url("../img/bg-intro-triangle-desktop.svg");
       background-size: 100% 57px;
     }
   }

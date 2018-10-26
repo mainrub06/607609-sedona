@@ -30,7 +30,7 @@
 
 .player__window-wrap {
   width: 100%;
-  background: transparent url("/img/video-mobile@1x.jpg") no-repeat;
+  background: transparent url("../img/video-mobile@1x.jpg") no-repeat;
 }
 
 .player__window {
@@ -159,7 +159,7 @@
     max-width: 800px;
     height: 499px;
     margin: 0 auto;
-    background: transparent url("/img/video-tablet@1x.jpg") no-repeat top center;
+    background: transparent url("../img/video-tablet@1x.jpg") no-repeat top center;
   }
 
   .player__window {
@@ -268,7 +268,7 @@
   .player__window-wrap {
     width: 800px;
     height: 500px;
-    background: transparent url("/img/video-desktop@1x.jpg") no-repeat;
+    background: transparent url("../img/video-desktop@1x.jpg") no-repeat;
   }
 
   .player__window {
