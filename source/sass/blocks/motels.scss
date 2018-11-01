@@ -24,6 +24,10 @@
   text-transform: uppercase;
   text-align: center;
   color: #333333;
+
+  &-line {
+    margin: 0;
+  }
 }
 
 .motels__button {
@@ -86,7 +90,7 @@
   .motels__map {
     width: 100%;
     height: 350px;
-    background: transparent url("/img/bg-map-desktop@1x.jpg") no-repeat center center;
+    background: transparent url("../img/bg-map-desktop@1x.jpg") no-repeat center center;
   }
 
   .motels__image {
@@ -103,14 +107,6 @@
     margin-bottom: 42px;
   }
 
-  .motels__text-space:nth-child(1) {
-    padding: 0 31%;
-  }
-
-  .motels__text-space:nth-child(2) {
-    padding: 0 20%;
-  }
-
   .motels__google {
     width: 100%;
     min-width: 768px;
@@ -125,19 +121,11 @@
 
   .motels__map {
     width: 1200px;
-    background: transparent url("/img/bg-map-desktop@1x.jpg") no-repeat;
+    background: transparent url("../img/bg-map-desktop@1x.jpg") no-repeat;
   }
 
   .motels__text {
     margin-bottom: 47px;
-  }
-
-  .motels__text-space:nth-child(1) {
-    padding: 0 300px;
-  }
-
-  .motels__text-space:nth-child(2) {
-    padding: 0 300px;
   }
 
   .motels__button {

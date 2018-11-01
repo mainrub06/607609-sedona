@@ -22,7 +22,7 @@
 }
 
 .advantage-description--svg {
-  background: #81b3d2 url("/img/bg-triangle.svg") no-repeat center top;
+  background: #81b3d2 url("../img/bg-triangle.svg") no-repeat center top;
   background-size: 100% 36px;
 }
 
@@ -76,7 +76,7 @@
     height: 37px;
     left: -49px;
     top: 16px;
-    background: transparent url("/img/icon-house.svg") no-repeat center center;
+    background: transparent url("../img/icon-house.svg") no-repeat center center;
     background-size: 39px 37px;
   }
 
@@ -87,7 +87,7 @@
     height: 38px;
     left: -45px;
     top: 16px;
-    background: transparent url("/img/icon-gift.svg") no-repeat center center;
+    background: transparent url("../img/icon-gift.svg") no-repeat center center;
     background-size: 32px 38px;
   }
 
@@ -98,7 +98,7 @@
     height: 35px;
     left: -52px;
     top: 24px;
-    background: transparent url("/img/icon-burger.svg") no-repeat center center;
+    background: transparent url("../img/icon-burger.svg") no-repeat center center;
     background-size: 40px 35px;
   }
 }
@@ -198,7 +198,7 @@
       left: 50%;
       transform: translateX(-50%);
       top: 60px;
-      background: transparent url("/img/icon-house.svg") no-repeat center center;
+      background: transparent url("../img/icon-house.svg") no-repeat center center;
       background-size: 75px 72px;
     }
 
@@ -210,7 +210,7 @@
       left: 50%;
       transform: translateX(-50%);
       top: 59px;
-      background: transparent url("/img/icon-gift.svg") no-repeat center center;
+      background: transparent url("../img/icon-gift.svg") no-repeat center center;
       background-size: 64px 75px;
     }
 
@@ -222,7 +222,7 @@
       left: 50%;
       transform: translateX(-50%);
       top: 65px;
-      background: transparent url("/img/icon-burger.svg") no-repeat center center;
+      background: transparent url("../img/icon-burger.svg") no-repeat center center;
       background-size: 77px 68px;
     }
   }
