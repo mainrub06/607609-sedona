@@ -24,6 +24,10 @@
   text-transform: uppercase;
   text-align: center;
   color: #333333;
+
+  &-line {
+    margin: 0;
+  }
 }
 
 .motels__button {
@@ -103,14 +107,6 @@
     margin-bottom: 42px;
   }
 
-  .motels__text-space:nth-child(1) {
-    padding: 0 31%;
-  }
-
-  .motels__text-space:nth-child(2) {
-    padding: 0 20%;
-  }
-
   .motels__google {
     width: 100%;
     min-width: 768px;
@@ -130,14 +126,6 @@
 
   .motels__text {
     margin-bottom: 47px;
-  }
-
-  .motels__text-space:nth-child(1) {
-    padding: 0 300px;
-  }
-
-  .motels__text-space:nth-child(2) {
-    padding: 0 300px;
   }
 
   .motels__button {
