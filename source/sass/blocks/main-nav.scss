@@ -27,22 +27,25 @@
   right: 20px;
   top: 17px;
   border: none;
-  background: transparent url("../img/icon-cross.svg") no-repeat center center;
+  background: transparent url("../img/icon-menu.svg") no-repeat center center;
   cursor: pointer;
   z-index: 1;
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 23px;
-    height: 22px;
-    left: 0;
-    top: 225px;
-    border: none;
-    background: transparent url("../img/icon-menu.svg") no-repeat center center;
-    cursor: pointer;
-    z-index: 0;
+  &--click {
+    background: transparent url("../img/icon-cross.svg") no-repeat center center;
   }
+  // &::before {
+  //   content: "";
+  //   position: absolute;
+  //   width: 23px;
+  //   height: 22px;
+  //   left: 0;
+  //   top: 225px;
+  //   border: none;
+  //   background: transparent url("../img/icon-menu.svg") no-repeat center center;
+  //   cursor: pointer;
+  //   z-index: 0;
+  // }
 }
 
 @media (min-width: $tablet-width) {

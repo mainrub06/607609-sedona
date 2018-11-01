@@ -41,6 +41,7 @@ gulp.task("server", function () {
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
   gulp.watch("source/img/{icon-like,icon-video-fullscreen,icon-video-replay,icon-video-subtitles,logo-htmlacademy}.svg", gulp.series("sprite", "html"));
   gulp.watch("source/*.html").on("change", server.reload);
+  gulp.watch("source/js/*.js").on("change", server.reload);
 });
 
 gulp.task("start", gulp.series("css", "server"));
