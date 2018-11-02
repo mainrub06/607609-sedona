@@ -83,6 +83,7 @@
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Verdana", sans-serif;
+  outline: none;
 
   &::placeholder {
     @include boldfont;
@@ -129,6 +130,7 @@
   border: none;
   background-color: #f2f2f2;
   box-shadow: inset -58px 0 0 0 #e5e5e5;
+  outline: none;
 
   &::placeholder {
     @include boldfont;
@@ -227,6 +229,7 @@
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Verdana", sans-serif;
+  outline: none;
 
   &::placeholder {
     @include boldfont;
@@ -612,7 +615,7 @@
       transform: translateY(-50%);
       left: 0;
       display: block;
-      width: 280;
+      width: 280px;
       height: 1px;
       background-color: #dbdbdb;
     }

@@ -72,6 +72,84 @@
   font-size: 90%;
 }
 
+.review__popup-succes,
+.review__popup-failure {
+  position: absolute;
+  display: none;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  padding: 45px 20px 20px 20px;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  z-index: 5;
+}
+
+.review__popup-succes {
+  background-image: linear-gradient(to top, #f2f2f2 0,#f2f2f2 98px, white 0);
+  min-height: 323px;
+  bottom: 68px;
+}
+
+.review__popup-failure {
+  bottom: 438px;
+  min-height: 280px;
+}
+
+.review__popup-title {
+  @include boldfont;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0 0 31px 0;
+}
+
+.review__popup-text {
+  @include normalfont;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
+  padding: 0 25px;
+}
+
+.review__popup-close {
+  width: 280px;
+  height: 58px;
+  padding: 0;
+  margin-top: 50px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #81b3d2;
+  @include boldfont;
+  line-height: 26px;
+  text-transform: uppercase;
+  text-align: center;
+  color: white;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #669ec0;
+  }
+
+  &:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+    color: #ffffff;
+  }
+}
+
+.review__popup-failure .review__popup-close {
+  width: 180px;
+  margin: 25px 0 0 50px;
+}
+
+
 @media (min-width: $tablet-width) {
   .review__block--style::before {
     display: none;
@@ -137,6 +215,41 @@
     margin-bottom: 0;
     order: 6;
   }
+
+  .review__popup-failure {
+    width: 400px;
+    bottom: 162px;
+    min-height: 347px;
+  }
+
+  .review__popup-failure .review__popup-title {
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 55px
+  }
+
+  .review__popup-failure .review__popup-close {
+    width: 272px;
+    margin: 34px 0 0 44px
+  }
+
+  .review__popup-succes {
+    width: 640px;
+    min-height: 348px;
+    bottom: 323px;
+    background-image: linear-gradient(to top, #f2f2f2 0,#f2f2f2 146px, white 0);
+  }
+
+  .review__popup-succes .review__popup-title {
+    font-size: 30px;
+    padding-top: 20px;
+    margin-bottom: 35px;
+  }
+
+  .review__popup-succes .review__popup-close {
+    width: 458px;
+    margin: 73px 0 0 70px;
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -181,6 +294,14 @@
 
   .review__submit {
     width: 480px;
+  }
+
+  .review__popup-failure {
+    bottom: 45px;
+  }
+
+  .review__popup-succes {
+    bottom: 316px;
   }
 }
 

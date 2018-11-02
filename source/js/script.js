@@ -3,6 +3,15 @@ var menu = document.querySelector(".site-list");
 var logo = document.querySelector(".main-nav__logo");
 var menuWrap = document.querySelector(".main-nav");
 var flag = 0;
+var submit = document.querySelector(".review__submit");
+var inputName = document.querySelector(".interview__name-input");
+var inputContacts = document.querySelector(".interview__contacts-input");
+var texTarea = document.querySelector(".interview__emotion-textarea");
+var popupDone = document.querySelector(".review__popup-succes");
+var popupFail = document.querySelector(".review__popup-failure");
+var closeDone = document.querySelector(".close-done");
+var closeFail = document.querySelector(".close-fail");
+
 
 newFunction();
 function newFunction() {
@@ -29,4 +38,24 @@ button.addEventListener("click", function toggle(evt) {
     menuWrap.classList.add("js-close");
     flag = 0;
   }
+});
+
+submit.addEventListener("click", function(evt) {
+  if (!inputName.value || !inputContacts.value || !texTarea.value) {
+    evt.preventDefault();
+    popupFail.classList.add("display-on");
+  } else {
+    evt.preventDefault();
+    popupDone.classList.add("display-on");
+  }
+});
+
+closeDone.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupDone.classList.remove("display-on");
+});
+
+closeFail.addEventListener("click", function(evt) {
+  evt.preventDefault();
+  popupFail.classList.remove("display-on");
 });
