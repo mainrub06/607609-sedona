@@ -45,8 +45,6 @@ gulp.task("server", function () {
   gulp.watch("source/js/*.js", gulp.series("js"));
 });
 
-gulp.task("start", gulp.series("css", "server"));
-
 gulp.task("images", function () {
   return gulp.src("source/img/**/*.{png,jpg,svg}")
     .pipe(imagemin([
