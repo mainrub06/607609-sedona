@@ -54,6 +54,14 @@
   border: none;
   background-color: none;
 
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   &:hover path {
     fill: #333333;
   }
@@ -142,18 +150,6 @@
 
 .player__icon-video-subtitles {
   fill: #5c6870;
-}
-
-.player__button-reply,
-.player__button-CC,
-.player__button-fullscreen {
-  &:hover {
-    opacity: 0.6;
-  }
-
-  &:active {
-    opacity: 0.3;
-  }
 }
 
 @media (min-width: $tablet-width) {

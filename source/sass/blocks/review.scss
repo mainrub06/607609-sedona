@@ -87,7 +87,7 @@
 }
 
 .review__popup-succes {
-  background-image: linear-gradient(to top, #f2f2f2 0,#f2f2f2 98px, white 0);
+  background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 98px, white 0);
   min-height: 323px;
   bottom: 68px;
 }
@@ -115,6 +115,7 @@
 }
 
 .review__popup-close {
+  @include boldfont;
   width: 280px;
   height: 58px;
   padding: 0;
@@ -122,7 +123,6 @@
   border: none;
   box-sizing: border-box;
   background-color: #81b3d2;
-  @include boldfont;
   line-height: 26px;
   text-transform: uppercase;
   text-align: center;
@@ -225,19 +225,19 @@
   .review__popup-failure .review__popup-title {
     font-size: 30px;
     line-height: 40px;
-    padding: 0 55px
+    padding: 0 55px;
   }
 
   .review__popup-failure .review__popup-close {
     width: 272px;
-    margin: 34px 0 0 44px
+    margin: 34px 0 0 44px;
   }
 
   .review__popup-succes {
     width: 640px;
     min-height: 348px;
     bottom: 323px;
-    background-image: linear-gradient(to top, #f2f2f2 0,#f2f2f2 146px, white 0);
+    background-image: linear-gradient(to top, #f2f2f2 0, #f2f2f2 146px, white 0);
   }
 
   .review__popup-succes .review__popup-title {
