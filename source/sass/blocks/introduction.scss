@@ -12,7 +12,7 @@
 .introduction--image {
   position: relative;
   background: url("../img/bg-back-mobile@1x.jpg") no-repeat center top;
-  background-size: 768px 389px;
+  background-size: 768px 389.35px;
   z-index: 0;
 }
 
@@ -21,11 +21,11 @@
   display: block;
   position: absolute;
   width: 100%;
-  height: 26px;
-  top: 364px;
+  height: 26.111px;
+  top: 363.9px;
   left: 0;
   background: url("../img/bg-intro-triangle-mobile.svg") no-repeat center center;
-  background-size: 100% 26px;
+  background-size: 100% 26.111px;
 }
 
 .introduction__title {
@@ -56,12 +56,12 @@
     min-width: 768px;
     max-width: 1199px;
     padding-top: 78px;
-    margin-bottom: 52px;
+    margin-bottom: 50px;
   }
 
   .introduction--image {
     background: url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
-    background-size: 1200px 518px;
+    background-size: 1200px 518.4px;
 
     &::after {
       content: "";
@@ -69,7 +69,7 @@
       position: absolute;
       width: 100%;
       height: 57px;
-      top: 463px;
+      top: 462px;
       left: 0;
       background: url("../img/bg-intro-triangle-tablet.svg") no-repeat center center;
       background-size: 100% 57px;
@@ -103,13 +103,19 @@
   }
 
   .introduction--image {
-    background:
-      url("../img/bg-intro-triangle-desktop.svg") repeat-x 0 462px,
-      url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+    background: url("../img/bg-back-desktop@1x.jpg") no-repeat top center;
+    background-size: 1200px 518.4px;
   }
 
   .introduction--image::after {
-    display: none;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 58px;
+    top: 461px;
+    left: 0;
+    background: url("../img/bg-intro-triangle-desktop.svg");
+    background-size: 100% 58px;
   }
 
   .introduction__image {
@@ -119,11 +125,11 @@
 
   .introduction__title {
     padding: 0 180px;
-    margin-top: 140px;
+    margin-top: 139px;
   }
 
   .introduction__description {
-    margin-top: 28px;
+    margin-top: 26px;
   }
 }
 
@@ -142,17 +148,6 @@
 @media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .introduction--image {
     background: url("../img/bg-back-desktop@2x.jpg") no-repeat;
-    background-size: 1200px 518px;
-
-    &::after {
-      display: block;
-      position: absolute;
-      width: 100%;
-      height: 57px;
-      top: 463px;
-      left: 0;
-      background: url("../img/bg-intro-triangle-desktop.svg");
-      background-size: 100% 57px;
-    }
+    background-size: 1200px 518.4px;
   }
 }

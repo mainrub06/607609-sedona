@@ -1,15 +1,21 @@
-.no-js {
-  display: none;
+@media (max-width: 767px) {
+  .no-js {
+    display: none;
+  }
+
+  .js-event {
+    display: none;
+  }
+
+  .js-logo {
+    top: 0;
+  }
+
+  .js-close {
+    min-height: 56px;
+  }
 }
 
-.js-event {
-  display: none;
-}
-
-.js-logo {
-  top: 0;
-}
-
-.js-close {
-  min-height: 56px;
+.display-on {
+  display: block;
 }

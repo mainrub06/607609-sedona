@@ -16,7 +16,7 @@
 }
 
 .interview__showplace {
-  padding: 18px 20px 42px 20px;
+  padding: 18px 20px 44px 20px;
 }
 
 .interview__emotion {
@@ -76,6 +76,7 @@
 }
 
 .interview__name-input {
+  @include boldfont;
   padding: 15px 22px 15px 22px;
   width: 100%;
   height: 58px;
@@ -83,9 +84,14 @@
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Verdana", sans-serif;
+  outline: none;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
 
   &::placeholder {
     @include boldfont;
+    font-size: 18px;
     line-height: 26px;
     color: black;
     text-align: middle;
@@ -119,7 +125,7 @@
 }
 
 .interview__contacts-input {
-  @include normalfont;
+  @include boldfont;
   position: relative;
   box-sizing: border-box;
   width: 100%;
@@ -129,6 +135,10 @@
   border: none;
   background-color: #f2f2f2;
   box-shadow: inset -58px 0 0 0 #e5e5e5;
+  outline: none;
+  font-size: 18px;
+  line-height: 26px;
+  color: black;
 
   &::placeholder {
     @include boldfont;
@@ -219,7 +229,7 @@
 }
 
 .interview__emotion-textarea {
-  @include normalfont;
+  @include boldfont;
   width: 100%;
   box-sizing: border-box;
   height: 160px;
@@ -227,6 +237,10 @@
   border: none;
   background-color: #f2f2f2;
   font-family: "PT Sans", "Verdana", sans-serif;
+  outline: none;
+  line-height: 26px;
+  font-size: 18px;
+  color: black;
 
   &::placeholder {
     @include boldfont;
@@ -240,7 +254,9 @@
 
   &:active,
   &:focus {
-    box-shadow: inset 4px 4px 0 0 #e5e5e5, inset -4px -4px 0 0 #e5e5e5;
+    padding: 11px 6px 0 18px;
+    border: 4px solid #e5e5e5;
+    // box-shadow: inset 4px 4px 0 0 #e5e5e5, inset -4px -4px 0 0 #e5e5e5;
     background-color: #ffffff;
   }
 }
@@ -341,6 +357,7 @@
   transform: translateY(-50%);
 }
 
+
 @media (min-width: $tablet-width) {
   .interview {
     display: flex;
@@ -361,7 +378,7 @@
       position: absolute;
       width: 1px;
       height: 100%;
-      left: -20%;
+      left: -22%;
       top: 0;
       background-color: #dbdbdb;
     }
@@ -437,7 +454,7 @@
 
   .interview__showplace .interview__title {
     font-size: 21px;
-    padding: 0 30%;
+    padding: 0 25%;
     margin-bottom: 58px;
   }
 
@@ -459,7 +476,7 @@
       transform: translateY(-50%);
       left: 0;
       display: block;
-      width: 19.5%;
+      width: 19%;
       height: 1px;
       background-color: #dbdbdb;
     }
@@ -471,7 +488,7 @@
       transform: translateY(-50%);
       right: 0;
       display: block;
-      width: 19.5%;
+      width: 19%;
       height: 1px;
       background-color: #dbdbdb;
     }
@@ -500,6 +517,10 @@
 
   .interview__name {
     width: 400px;
+
+    &::before {
+      left: -80px;
+    }
   }
 
   .interview__impression {
@@ -508,6 +529,7 @@
 
   .interview__impression .interview__title {
     padding-left: 78px;
+    margin-bottom: 73px;
   }
 
   .interview__contacts {
@@ -543,7 +565,7 @@
 
   .interview__showplace {
     width: 960px;
-    margin-top: 50px;
+    margin-top: 52px;
   }
 
   .interview__showplace-label {
@@ -552,7 +574,7 @@
 
   .interview__showplace .interview__title {
     padding: 0 280px;
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     background-color: #ffffff;
   }
 
@@ -612,7 +634,7 @@
       transform: translateY(-50%);
       left: 0;
       display: block;
-      width: 280;
+      width: 280px;
       height: 1px;
       background-color: #dbdbdb;
     }
