@@ -42,22 +42,24 @@ button.addEventListener("click", function toggle(evt) {
   }
 });
 
-form.addEventListener("submit", function (evt) {
-  if (!inputName.value || !inputContacts.value || !texTarea.value) {
-    evt.preventDefault();
-    popupFail.classList.add("display-on");
-  } else {
-    evt.preventDefault();
-    popupDone.classList.add("display-on");
-  }
-});
+if(form) {
+  form.addEventListener("submit", function (evt) {
+    if (!inputName.value || !inputContacts.value || !texTarea.value) {
+      evt.preventDefault();
+      popupFail.classList.add("display-on");
+    } else {
+      evt.preventDefault();
+      popupDone.classList.add("display-on");
+    }
+  });
 
-closeDone.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popupDone.classList.remove("display-on");
-});
+  closeDone.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popupDone.classList.remove("display-on");
+  });
 
-closeFail.addEventListener("click", function(evt) {
-  evt.preventDefault();
-  popupFail.classList.remove("display-on");
-});
+  closeFail.addEventListener("click", function(evt) {
+    evt.preventDefault();
+    popupFail.classList.remove("display-on");
+  });
+};
