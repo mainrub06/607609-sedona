@@ -36,113 +36,118 @@
     <main class="page-main">
       <section class="gallery">
         <div class="gallery__top">
-          <h1 class="gallery__title">Фото и видео</h1>
-          <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
-            политике и экономике.</p>
+          <div class="gallery__text-wrap">
+            <h1 class="gallery__title">Фото и видео</h1>
+            <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о
+              политике и экономике.</p>
+          </div>
         </div>
-        <ul class="gallery__list photo-list">
-          <li class="gallery__item photo-list__item photo-list__item--style photo-list__item--image-road">
-            <a href="sunset.html" class="gallery__picture-link">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
-                <img class="photo-list__picture" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
-                  alt="Фото просторов">
-              </picture>
-            </a>
-            <div class="photo-list__wrap-left">
-              <p class="photo-list__name"><b class="photo-list__bold">Неродные просторы</b></p>
-              <p class="photo-list__author">Автор фото: Борис</p>
-            </div>
-            <div class="photo-list__wrap-right">
-              <button class="photo-list__button">
-                <svg class="photo-list__icon-like" width="22" height="22">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
-              </button>
-              <p class="photo-list__likes">1350</p>
-            </div>
-          </li>
-          <li class="gallery__item photo-list__item photo-list__item--style photo-list__item--image-nature">
-            <a href="cactus.html" class="gallery__picture-link">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
-                <img class="photo-list__picture" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x"
-                  alt="Фото кактуса">
-              </picture>
-            </a>
-            <div class="photo-list__wrap-left">
-              <p class="photo-list__name"><b class="photo-list__bold">Местная растительность</b></p>
-              <p class="photo-list__author">Автор фото: Сергей</p>
-            </div>
-            <div class="photo-list__wrap-right">
-              <button class="photo-list__button">
-                <svg class="photo-list__icon-like" width="22" height="22">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
-              </button>
-              <p class="photo-list__likes">143</p>
-            </div>
+        <div class="gallery__list-wrap">
+          <ul class="gallery__list photo-list">
+            <li class="gallery__item photo-list__item photo-list__item--style photo-list__item--image-road">
+              <a href="sunset.html" class="gallery__picture-link">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.webp 1x, img/photo-sunset-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.webp 1x, img/photo-sunset-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-sunset-mobile@1x.webp 1x, img/photo-sunset-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg 1x, img/photo-sunset-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-sunset-tablet@1x.jpg 1x, img/photo-sunset-tablet@2x.jpg 2x">
+                  <img class="photo-list__picture" src="img/photo-sunset-mobile@1x.jpg" srcset="img/photo-sunset-mobile@2x.jpg 2x"
+                    alt="Фото просторов">
+                </picture>
+              </a>
+              <div class="photo-list__wrap-left">
+                <p class="photo-list__name"><b class="photo-list__bold">Неродные просторы</b></p>
+                <p class="photo-list__author">Автор фото: Борис</p>
+              </div>
+              <div class="photo-list__wrap-right">
+                <button class="photo-list__button">
+                  <svg class="photo-list__icon-like" width="22" height="22">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                </button>
+                <p class="photo-list__likes">1350</p>
+              </div>
+            </li>
+            <li class="gallery__item photo-list__item photo-list__item--style photo-list__item--image-nature">
+              <a href="cactus.html" class="gallery__picture-link">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.webp 1x, img/photo-cactus-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.webp 1x, img/photo-cactus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-cactus-mobile@1x.webp 1x, img/photo-cactus-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg 1x, img/photo-cactus-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-cactus-tablet@1x.jpg 1x, img/photo-cactus-tablet@2x.jpg 2x">
+                  <img class="photo-list__picture" src="img/photo-cactus-mobile@1x.jpg" srcset="img/photo-cactus-mobile@2x.jpg 2x"
+                    alt="Фото кактуса">
+                </picture>
+              </a>
+              <div class="photo-list__wrap-left">
+                <p class="photo-list__name"><b class="photo-list__bold">Местная растительность</b></p>
+                <p class="photo-list__author">Автор фото: Сергей</p>
+              </div>
+              <div class="photo-list__wrap-right">
+                <button class="photo-list__button">
+                  <svg class="photo-list__icon-like" width="22" height="22">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                </button>
+                <p class="photo-list__likes">143</p>
+              </div>
 
-          </li>
-          <li class="gallery__item photo-list__item photo-list__item--style photo-list__item--image-north">
-            <a href="roads.html" class="gallery__picture-link">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
-                <img class="photo-list__picture" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
-                  alt="Фото дорог">
-              </picture>
-            </a>
-            <div class="photo-list__wrap-left">
-              <p class="photo-list__name"><b class="photo-list__bold">Дорога на север</b></p>
-              <p class="photo-list__author">Автор фото: Петр</p>
-            </div>
-            <div class="photo-list__wrap-right">
-              <button class="photo-list__button">
-                <svg class="photo-list__icon-like" width="22" height="22">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
-              </button>
-              <p class="photo-list__likes">96</p>
-            </div>
-          </li>
-          <li class="gallery__item photo-list__item photo-list__item--style photo-list__item--image-bridge">
-            <a href="bridge.html" class="gallery__picture-link">
-              <picture>
-                <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
-                <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
-                <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
-                <img class="photo-list__picture" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
-                  alt="Фото моста">
-              </picture>
-            </a>
-            <div class="photo-list__wrap-left">
-              <p class="photo-list__name"><b class="photo-list__bold">Мост дьявола</b></p>
-              <p class="photo-list__author">Автор фото: Антон</p>
-            </div>
-            <div class="photo-list__wrap-right">
-              <button class="photo-list__button">
-                <svg class="photo-list__icon-like" width="22" height="22">
-                  <use xlink:href="#icon-like"></use>
-                </svg>
-              </button>
-              <p class="photo-list__likes">254</p>
-            </div>
-          </li>
-        </ul>
+            </li>
+            <li class="gallery__item photo-list__item photo-list__item--style photo-list__item--image-north">
+              <a href="roads.html" class="gallery__picture-link">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.webp 1x, img/photo-roads-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.webp 1x, img/photo-roads-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-roads-mobile@1x.webp 1x, img/photo-roads-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg 1x, img/photo-roads-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-roads-tablet@1x.jpg 1x, img/photo-roads-tablet@2x.jpg 2x">
+                  <img class="photo-list__picture" src="img/photo-roads-mobile@1x.jpg" srcset="img/photo-roads-mobile@2x.jpg 2x"
+                    alt="Фото дорог">
+                </picture>
+              </a>
+              <div class="photo-list__wrap-left">
+                <p class="photo-list__name"><b class="photo-list__bold">Дорога на север</b></p>
+                <p class="photo-list__author">Автор фото: Петр</p>
+              </div>
+              <div class="photo-list__wrap-right">
+                <button class="photo-list__button">
+                  <svg class="photo-list__icon-like" width="22" height="22">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                </button>
+                <p class="photo-list__likes">96</p>
+              </div>
+            </li>
+            <li class="gallery__item photo-list__item photo-list__item--style photo-list__item--image-bridge">
+              <a href="bridge.html" class="gallery__picture-link">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.webp 1x, img/photo-bridge-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.webp 1x, img/photo-bridge-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/photo-bridge-mobile@1x.webp 1x, img/photo-bridge-mobile@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg 1x, img/photo-bridge-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/photo-bridge-tablet@1x.jpg 1x, img/photo-bridge-tablet@2x.jpg 2x">
+                  <img class="photo-list__picture" src="img/photo-bridge-mobile@1x.jpg" srcset="img/photo-bridge-mobile@2x.jpg 2x"
+                    alt="Фото моста">
+                </picture>
+              </a>
+              <div class="photo-list__wrap-left">
+                <p class="photo-list__name"><b class="photo-list__bold">Мост дьявола</b></p>
+                <p class="photo-list__author">Автор фото: Антон</p>
+              </div>
+              <div class="photo-list__wrap-right">
+                <button class="photo-list__button">
+                  <svg class="photo-list__icon-like" width="22" height="22">
+                    <use xlink:href="#icon-like"></use>
+                  </svg>
+                </button>
+                <p class="photo-list__likes">254</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
       </section>
       <section class="player">
         <h2 class="visually-hidden">Видео ролик о Седоне</h2>

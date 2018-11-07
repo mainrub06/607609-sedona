@@ -1,6 +1,7 @@
 .interview {
   min-width: 320px;
   margin-bottom: 55px;
+  background-color: #ffffff;
 }
 
 .interview__name {
@@ -88,6 +89,7 @@
   font-size: 18px;
   line-height: 26px;
   color: black;
+  min-width: 150px;
 
   &::placeholder {
     @include boldfont;
@@ -364,6 +366,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 61px;
+    padding: 0 8%;
   }
 
   .interview__name {
@@ -513,6 +516,7 @@
 @media (min-width: $desktop-width) {
   .interview {
     margin-bottom: 65px;
+    padding: 0 120px;
   }
 
   .interview__name {

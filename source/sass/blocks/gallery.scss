@@ -2,7 +2,7 @@
   position: relative;
   min-width: 320px;
   max-width: 767px;
-  background: url("../img/bg-back-mobile@1x.jpg") no-repeat center -231px;
+  background: #ddebf4 url("../img/bg-back-mobile@1x.jpg") no-repeat center -231px;
   background-size: 768px 389.5px;
 
   &::after {
@@ -30,7 +30,12 @@
 }
 
 .gallery__top {
-  padding-top: 198px;
+  padding-top: 160px;
+}
+
+.gallery__text-wrap {
+  padding: 36px 0 14px 0;
+  background-color: #ffffff;
 }
 
 .gallery__title {
@@ -44,7 +49,7 @@
 
 .gallery__text {
   @include normalfont;
-  margin: 25px 0 27px 0;
+  margin: 25px 0 0 0;
   padding: 0 23px;
   line-height: 24px;
   color: #333333;
@@ -57,7 +62,7 @@
     position: relative;
     min-width: 768px;
     max-width: 1199px;
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center -231px;
+    background: #ddebf4 url("../img/bg-back-desktop@1x.jpg") no-repeat center -231px;
 
     &::before {
       content: "";
@@ -85,8 +90,18 @@
     background-size: 100% 57px;
   }
 
+  .gallery__list-wrap {
+    width: auto;
+    background-color: #ffffff;
+  }
+
   .gallery__top {
-    padding-top: 364px;
+    padding-top: 288.4px;
+  }
+
+  .gallery__text-wrap {
+    padding: 75px 0 68px 0;
+    background-color: #ffffff;
   }
 
   .gallery__title {
@@ -95,7 +110,7 @@
 
   .gallery__text {
     padding: 0 165px;
-    margin: 32px 0 68px 0;
+    margin: 32px 0 0 0;
   }
 
   .gallery__list {
@@ -108,7 +123,7 @@
   .gallery {
     position: relative;
     width: 1200px;
-    background: url("../img/bg-back-desktop@1x.jpg") no-repeat center -215px;
+    background: #ddebf4 url("../img/bg-back-desktop@1x.jpg") no-repeat center -215px;
     background-size: 1200px 518px;
 
     &::before {
@@ -140,27 +155,35 @@
   }
 
   .gallery__top {
-    padding-top: 414px;
+    padding-top: 303px;
+  }
+
+  .gallery__text-wrap {
+    background-color: #ffffff;
+    padding: 109px 0 70px 0;
   }
 }
 
-@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+@media (min-resolution: 144dpi),
+(min-resolution: 1.5dppx) {
   .gallery {
-    background: url("../img/bg-back-mobile@2x.jpg") no-repeat center -231px;
+    background: #ddebf4 url("../img/bg-back-mobile@2x.jpg") no-repeat center -231px;
     background-size: 768px 389.5px;
   }
 }
 
-@media (min-width: $tablet-width) and (min-resolution: 144dpi), (min-width: $tablet-width) and (min-resolution: 1.5dppx) {
+@media (min-width: $tablet-width) and (min-resolution: 144dpi),
+(min-width: $tablet-width) and (min-resolution: 1.5dppx) {
   .gallery {
-    background: url("../img/bg-back-desktop@2x.jpg") no-repeat center -231px;
+    background: #ddebf4 url("../img/bg-back-desktop@2x.jpg") no-repeat center -231px;
     background-size: 1200px 518px;
   }
 }
 
-@media (min-width: $desktop-width) and (min-resolution: 144dpi), (min-width: $desktop-width) and (min-resolution: 1.5dppx) {
+@media (min-width: $desktop-width) and (min-resolution: 144dpi),
+(min-width: $desktop-width) and (min-resolution: 1.5dppx) {
   .gallery {
-    background: url("../img/bg-back-desktop@2x.jpg") no-repeat center -215px;
+    background: #ddebf4 url("../img/bg-back-desktop@2x.jpg") no-repeat center -215px;
     background-size: 1200px 518px;
   }
 }
