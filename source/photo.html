@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font">
+  <link rel="preload" href="fonts/ptsans.woff2" as="font">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -157,21 +159,21 @@
           <div class="player__window-wrap">
             <video class="player__window" controls="" src="video.mp4"></video>
             <div class="player__buttons">
-              <button class="player__button-reply">
+              <button class="player__button-reply" aria-label="повторить">
                 <svg class="player__icon-video-replay" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" width="16px" height="20px" viewBox="0 0 16 20" enable-background="new 0 0 16 20"
                   xml:space="preserve">
                   <use xlink:href="#icon-video-replay"></use>
                 </svg>
               </button>
-              <button class="player__button-CC">
+              <button class="player__button-CC" aria-label="субтитры">
                 <svg class="player__icon-video-subtitles" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" width="32px" height="20px" viewBox="0 0 32 20" enable-background="new 0 0 32 20"
                   xml:space="preserve">
                   <use xlink:href="#icon-video-subtitles"></use>
                 </svg>
               </button>
-              <button class="player__button-fullscreen">
+              <button class="player__button-fullscreen" aria-label="на весь экран">
                 <svg class="player__icon-video-fullscreen" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                   x="0px" y="0px" width="20px" height="20px" viewBox="0 0 20 20" enable-background="new 0 0 20 20"
                   xml:space="preserve">
@@ -179,7 +181,7 @@
                 </svg>
               </button>
               <div class="player__buttons-line">
-                <button class="player__buttons-slider"></button>
+                <button class="player__buttons-slider" aria-label="видео-ползунок"></button>
               </div>
             </div>
           </div>
@@ -192,13 +194,13 @@
         <a class="footer-page__hashtag" href="http://instagram.com/#visitsedona">#VISITSEDONA</a>
       </div>
       <ul class="footer-page__social">
-        <li><a class="footer-page__twitter" href="#"></a></li>
-        <li><a class="footer-page__facebook" href="#"></a></li>
-        <li><a class="footer-page__youtube" href="#"></a></li>
+        <li><a class="footer-page__twitter" href="#" aria-label="ссылка на twitter"></a></li>
+        <li><a class="footer-page__facebook" href="#" aria-label="ссылка на facebook"></a></li>
+        <li><a class="footer-page__youtube" href="#" aria-label="ссылка на youtube"></a></li>
       </ul>
       <div class="footer-page__developer">
         <p class="footer-page__developer-text">Разработано</p>
-        <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="страница htmlacademy">
           <svg class="footer-page__link-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
             xml:space="preserve">
