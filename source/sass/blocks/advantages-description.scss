@@ -314,7 +314,7 @@
 
   .advantage-description__services-item {
     width: 400px;
-    height: 330px;
+    min-height: 330px;
 
     &:nth-of-type(1) {
       order: 1;
