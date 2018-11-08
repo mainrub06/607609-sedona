@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -38,10 +40,12 @@
         <h2 class="visually-hidden">Вступление</h2>
         <img src="img/text-sedona-index.svg" alt="Большой логотип - Седона" class="introduction__image" width="282"
           height="214">
-        <p class="introduction__title">
-          <b class="introduction__title-bold">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</b>
-        </p>
-        <p class="introduction__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        <div class="introduction__text-wrap">
+          <p class="introduction__title">
+            <b class="introduction__title-bold">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</b>
+          </p>
+          <p class="introduction__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+        </div>
       </section>
       <section class="advantages">
         <h2 class="visually-hidden">Преимущества городка Седона</h2>
@@ -76,8 +80,8 @@
               <li class="advantage-description__services-item advantage-description__services-item--gift">
                 <p class="advantage-description__services-title"><b class="advantage-description__services-bold">Сувениры</b></p>
                 <p class="advantage-description__services-text">
-                  <span>Не только китайского,</span>
-                  <span>но и местного производства!</span></p>
+                  Не только китайского,<br class="mobile-hidden">
+                  но и местного производства!</p>
               </li>
               <li class="advantage-description__services-item advantage-description__services-item--food">
                 <p class="advantage-description__services-title"><b class="advantage-description__services-bold">Еда</b></p>
@@ -152,13 +156,13 @@
         <a class="footer-page__hashtag" href="http://instagram.com/#visitsedona">#VISITSEDONA</a>
       </div>
       <ul class="footer-page__social">
-        <li><a class="footer-page__twitter" href="#"></a></li>
-        <li><a class="footer-page__facebook" href="#"></a></li>
-        <li><a class="footer-page__youtube" href="#"></a></li>
+        <li><a class="footer-page__twitter" href="#" aria-label="ссылка на twitter"></a></li>
+        <li><a class="footer-page__facebook" href="#" aria-label="ссылка на facebook"></a></li>
+        <li><a class="footer-page__youtube" href="#" aria-label="ссылка на youtube"></a></li>
       </ul>
       <div class="footer-page__developer">
         <p class="footer-page__developer-text">Разработано</p>
-        <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="страница htmlacademy">
           <svg class="footer-page__link-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
             xml:space="preserve">

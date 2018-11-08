@@ -1,6 +1,7 @@
 .interview {
   min-width: 320px;
   margin-bottom: 55px;
+  background-color: #ffffff;
 }
 
 .interview__name {
@@ -12,11 +13,11 @@
 }
 
 .interview__impression {
-  padding: 18px 20px 46px 20px;
+  padding: 18px 20px 27px 20px;
 }
 
 .interview__showplace {
-  padding: 18px 20px 44px 20px;
+  padding: 18px 20px 29px 20px;
 }
 
 .interview__emotion {
@@ -40,11 +41,11 @@
 }
 
 .interview__impression .interview__title {
-  margin: 0 0 37px 0;
+  margin: 0 0 22px 0;
 }
 
 .interview__showplace .interview__title {
-  margin: 0 0 31px 0;
+  margin: 0 0 16px 0;
 }
 
 .interview__emotion .interview__title {
@@ -88,6 +89,7 @@
   font-size: 18px;
   line-height: 26px;
   color: black;
+  min-width: 150px;
 
   &::placeholder {
     @include boldfont;
@@ -188,12 +190,8 @@
   list-style: none;
 }
 
-.interview__impression-radio {
-  display: none;
-}
-
 .interview__impression-item:not(:last-child) {
-  margin-bottom: 42px;
+  margin-bottom: 14px;
 }
 
 .interview__impression-label {
@@ -201,7 +199,7 @@
   display: block;
   position: relative;
   line-height: 26px;
-  padding-left: 78px;
+  padding: 15px 0 15px 78px;
   cursor: pointer;
 }
 
@@ -212,18 +210,14 @@
 }
 
 .interview__showplace-item:not(:last-child) {
-  margin-bottom: 54px;
-}
-
-.interview__showplace-checkbox {
-  display: none;
+  margin-bottom: 24px;
 }
 
 .interview__showplace-label {
   @include boldfont;
   display: block;
   position: relative;
-  padding-left: 78px;
+  padding: 15px 0 15px 78px;
   line-height: 26px;
   cursor: pointer;
 }
@@ -345,6 +339,11 @@
   opacity: 0.3;
 }
 
+.interview__impression-radio:focus + .interview__impression-label,
+.interview__showplace-checkbox:focus + .interview__showplace-label {
+  outline: 4px solid #e5e5e5;
+}
+
 .interview__showplace-checkbox:checked + .interview__showplace-label::after {
   content: "";
   position: absolute;
@@ -364,6 +363,7 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: 61px;
+    padding: 0 8%;
   }
 
   .interview__name {
@@ -409,7 +409,7 @@
 
   .interview__emotion {
     width: 100%;
-    margin-top: 24px;
+    margin-top: 36px;
     padding: 0;
     order: 5;
   }
@@ -425,7 +425,7 @@
   .interview__showplace-list .interview__showplace-item {
     width: 228px;
     padding-left: 6.5%;
-    margin-bottom: 60px;
+    margin-bottom: 32px;
   }
 
   .interview__name .interview__title,
@@ -440,11 +440,11 @@
   }
 
   .interview__impression .interview__title {
-    margin-bottom: 75px;
+    margin-bottom: 60px;
   }
 
   .interview__impression-item:not(:last-child) {
-    margin-bottom: 53px;
+    margin-bottom: 21px;
   }
 
   .interview__contacts .interview__title {
@@ -455,7 +455,7 @@
   .interview__showplace .interview__title {
     font-size: 21px;
     padding: 0 25%;
-    margin-bottom: 58px;
+    margin-bottom: 40px;
   }
 
   .interview__emotion .interview__title {
@@ -513,6 +513,7 @@
 @media (min-width: $desktop-width) {
   .interview {
     margin-bottom: 65px;
+    padding: 0 120px;
   }
 
   .interview__name {
@@ -529,7 +530,11 @@
 
   .interview__impression .interview__title {
     padding-left: 78px;
-    margin-bottom: 73px;
+    margin-bottom: 58px;
+  }
+
+  .interview__impression-label {
+    padding-left: 79px;
   }
 
   .interview__contacts {
@@ -574,7 +579,7 @@
 
   .interview__showplace .interview__title {
     padding: 0 280px;
-    margin-bottom: 54px;
+    margin-bottom: 39px;
     background-color: #ffffff;
   }
 
@@ -587,7 +592,7 @@
   .interview__showplace-list .interview__showplace-item {
     width: 204px;
     padding: 0;
-    margin-bottom: 65px;
+    margin-bottom: 50px;
   }
 
   .interview__showplace-item:nth-child(2),

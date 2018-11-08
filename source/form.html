@@ -5,6 +5,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>HTML Academy: Седона</title>
+  <link rel="preload" href="fonts/ptsansbold.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/ptsans.woff2" as="font" crossorigin>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 
@@ -37,9 +39,11 @@
       <section class="page-main__review review">
         <h2 class="visually-hidden">Форма отзыва</h2>
         <div class="review__top">
-          <p class="review__title"><b class="review__title-bold">Оставьте свой отзыв</b></p>
-          <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
-            достопримечательностях</p>
+          <div class="review__text-wrap">
+            <p class="review__title"><b class="review__title-bold">Оставьте свой отзыв</b></p>
+            <p class="review__text">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами
+              достопримечательностях</p>
+          </div>
         </div>
         <form class="review__interview interview" action="http://echo.htmlacademy.ru" method="POST">
           <div class="review__block interview__name review__block--style">
@@ -73,16 +77,16 @@
             <p class="interview__title"><b class="interview__bold">Ваше общее впечатление:</b></p>
             <ul class="interview__impression-list">
               <li class="interview__impression-item">
-                <input class="interview__impression-radio" type="radio" id="radio-1" name="feedback-radio" value="great-opinion"
+                <input class="interview__impression-radio visually-hidden" type="radio" id="radio-1" name="feedback-radio" value="great-opinion"
                   checked="">
                 <label class="interview__impression-label" for="radio-1">Скорее положительное</label>
               </li>
               <li class="interview__impression-item">
-                <input class="interview__impression-radio" type="radio" id="radio-2" name="feedback-radio" value="bad-opinion">
+                <input class="interview__impression-radio visually-hidden" type="radio" id="radio-2" name="feedback-radio" value="bad-opinion">
                 <label class="interview__impression-label" for="radio-2">Скорее отрицательное</label>
               </li>
               <li class="interview__impression-item">
-                <input class="interview__impression-radio" type="radio" id="radio-3" name="feedback-radio" value="no-answer">
+                <input class="interview__impression-radio visually-hidden" type="radio" id="radio-3" name="feedback-radio" value="no-answer">
                 <label class="interview__impression-label" for="radio-3">Затрудняюсь ответить</label>
               </li>
             </ul>
@@ -91,22 +95,22 @@
             <p class="interview__title"><b class="interview__bold">Посещенные достопримечательности:</b></p>
             <ul class="interview__showplace-list">
               <li class="interview__showplace-item">
-                <input class="interview__showplace-checkbox" type="checkbox" id="bridge-devil" name="feedback-places"
+                <input class="interview__showplace-checkbox visually-hidden" type="checkbox" id="bridge-devil" name="feedback-places"
                   value="place-1" checked="">
                 <label class="interview__showplace-label" for="bridge-devil">Мост Дьявола</label>
               </li>
               <li class="interview__showplace-item">
-                <input class="interview__showplace-checkbox" type="checkbox" id="mount" name="feedback-places" value="place-2"
+                <input class="interview__showplace-checkbox visually-hidden" type="checkbox" id="mount" name="feedback-places" value="place-2"
                   checked="">
                 <label class="interview__showplace-label" for="mount">Гора-Колокол</label>
               </li>
               <li class="interview__showplace-item">
-                <input class="interview__showplace-checkbox" type="checkbox" id="park" name="feedback-places" value="place-3"
+                <input class="interview__showplace-checkbox visually-hidden" type="checkbox" id="park" name="feedback-places" value="place-3"
                   checked="">
                 <label class="interview__showplace-label" for="park">Слайд-парк</label>
               </li>
               <li class="interview__showplace-item">
-                <input class="interview__showplace-checkbox" type="checkbox" id="red-mount" name="feedback-places"
+                <input class="interview__showplace-checkbox visually-hidden" type="checkbox" id="red-mount" name="feedback-places"
                   value="place-4">
                 <label class="interview__showplace-label" for="red-mount">Красные скалы</label>
               </li>
@@ -140,13 +144,13 @@
         <a class="footer-page__hashtag" href="http://instagram.com/#visitsedona">#VISITSEDONA</a>
       </div>
       <ul class="footer-page__social">
-        <li><a class="footer-page__twitter" href="#"></a></li>
-        <li><a class="footer-page__facebook" href="#"></a></li>
-        <li><a class="footer-page__youtube" href="#"></a></li>
+        <li><a class="footer-page__twitter" href="#" aria-label="ссылка на twitter"></a></li>
+        <li><a class="footer-page__facebook" href="#" aria-label="ссылка на facebook"></a></li>
+        <li><a class="footer-page__youtube" href="#" aria-label="ссылка на youtube"></a></li>
       </ul>
       <div class="footer-page__developer">
         <p class="footer-page__developer-text">Разработано</p>
-        <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="footer-page__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="страница htmlacademy">
           <svg class="footer-page__link-image" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
             x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09"
             xml:space="preserve">
